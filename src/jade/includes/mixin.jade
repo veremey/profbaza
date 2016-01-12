@@ -1,0 +1,7 @@
+mixin icon(name)
+	svg(class="icon icon-" + name)
+		use(xlink:href="#icon-" + name)
+
+mixin style(...files)
+	each file in files
+		link(rel="stylesheet", href= file)

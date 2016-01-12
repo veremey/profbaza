@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -28,9 +28,57 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+/////////////////
+// font
+
+=play
+	font-family: "Play", Arial, sans-serif
+	font-weight: 700
+=os
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 400
+=osl
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 300
+=oss
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 600
+=osb
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 700
+=osbl
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 800
+
+
+
+////////////////
+//colors
+
+$n: transparent
+$body: #f5f8f9
+$black: #2b2f32
+$gray: #9ba1a5
+$dark: #4c5256
+$blue: #3ab8ea
+$green: #63bd70
+
+a
+	text-decoration: none
+
+
 body
 	font-family: Arial, sans-serif
-	font-size: 12px
+	font-size: 18px
 	line-height: 1.4
-	
+	background-color: $body
+	+osl
+
 // common blocks
+
+.out
+	max-width: 1800px
+	width: 96%
+	margin: 0 auto
+	position: relative
+	+clr
