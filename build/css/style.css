@@ -87,12 +87,24 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .header__menu li.is_active { border-bottom: 3px solid #3ab8ea; }
 .header__menu a { display: block; padding: 0 25px; line-height: 97px; color: #2b2f32; }
 .header__menu a:hover { background-color: #f5f8f9; }
+.header__profile { float: right; width: 340px; *zoom: 1; }
+.header__profile:after { content: " "; display: table; clear: both; }
+
+.profile { float: left; width: 235px; height: 100px; border: 1px solid #f5f8f9; border-top: 0; border-bottom: 0; }
+.profile a { float: left; position: relative; width: 33.333%; height: 100px; }
+.profile a:hover { opacity: 0.7; }
+
+.user { width: 105px; height: 100px; position: relative; float: right; }
+.user:hover { cursor: pointer; opacity: 0.7; }
+.user img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-border-radius: 100%; border-radius: 100%; }
 
 .icon-messege { display: inline-block; background-image: url("../img/icons.png"); width: 27px; height: 27px; background-position: 0px -32px; }
 
 .icon-bell { display: inline-block; background-image: url("../img/icons.png"); width: 23px; height: 27px; background-position: -31px -32px; }
 
 .icon-users { display: inline-block; background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: 0px 0px; }
+
+.vcenter { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }

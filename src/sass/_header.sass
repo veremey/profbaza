@@ -35,4 +35,33 @@
 			&:hover
 				background-color: $body
 	&__profile
+		float: right
+		width: 340px
+		+clr
+.profile
+	float: left
+	width: 235px
+	height: 100px
+	border: 1px solid $body
+	border-top: 0
+	border-bottom: 0
+	a
+		float: left
+		position: relative
+		width: 33.333%
+		height: 100px
+		&:hover
+			opacity: 0.7
+.user
+	width: 105px
+	height: 100px
+	position: relative
+	float: right
+	&:hover
+		cursor: pointer
+		opacity: 0.7
+	img
+		+vcenter
+		-webkit-border-radius: 100%
+		border-radius: 100%
 
