@@ -1,1 +1,52 @@
-// Normally mainpage styles
+// Normally left aside styles
+.side
+	position: relative
+	width: 340px
+	+clr
+	&__wrap
+		background-color: #FFF
+		padding: 25px
+
+.school
+	+clr
+	&__logo
+		display: block
+		position: relative
+		width: 250px
+		height: 170px
+		margin: 0 auto
+		&:hover
+			opacity: 0.7
+		img
+			width: 140px
+			height: 140px
+			+vcenter
+	&__info
+		margin: 10px auto
+		text-align: center
+		p,
+		span
+			color: $gray
+			font-size: 20px
+			margin-top: 15px
+			a
+				color: $blue
+				text-decoration: underline
+				margin-right: 5px
+				+tr(.3s)
+				&:hover
+					text-decoration: none
+		.online
+			display: inline-block
+			position: relative
+			padding-left: 15px
+			&:before
+				content: ""
+				position: absolute
+				top: 13px
+				left: 2px
+				width: 4px
+				height: 4px
+				-webkit-border-radius: 100%
+				border-radius: 100%
+				background-color: $green

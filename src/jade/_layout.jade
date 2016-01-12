@@ -1,17 +1,20 @@
-//- это основной документ шаблон
+//- это основнойшаблон документ с тремя колонками
 
 //-добавим миксины
 include includes/mixin
 
 doctype html
 html
-  include includes/head
-  body
+	include includes/head
+	body
 
-    include includes/header
+		include includes/header
 
-    //BEGIN out
+		//BEGIN out
+		.out
+			aside.side.get__left
+				include includes/aside/leftTop
 
-    //END out
+		//END out
 
-    //- include includes/footer
+		//- include includes/footer

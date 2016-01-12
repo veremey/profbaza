@@ -30,6 +30,9 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-skrill:before { content: ""; }
 
 a { text-decoration: none; }
+a:hover { cursor: pointer; }
+
+img { max-width: 100%; max-height: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; background-color: #f5f8f9; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 
@@ -76,7 +79,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .slick-dots button { display: block; width: 6px; height: 6px; background: #fff; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; }
 .slick-dots button:hover { -webkit-box-shadow: none; box-shadow: none; }
 
-.header { background-color: #FFF; height: 100px; *zoom: 1; }
+.header { background-color: #FFF; height: 100px; margin-bottom: 30px; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header__logo { float: left; padding-bottom: 40px; -webkit-transition: 0.3s; transition: 0.3s; }
 .header__logo:hover { opacity: 0.7; cursor: pointer; }
@@ -98,13 +101,37 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .user:hover { cursor: pointer; opacity: 0.7; }
 .user img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-border-radius: 100%; border-radius: 100%; }
 
+.side { position: relative; width: 340px; *zoom: 1; }
+.side:after { content: " "; display: table; clear: both; }
+.side__wrap { background-color: #FFF; padding: 25px; }
+
+.school { *zoom: 1; }
+.school:after { content: " "; display: table; clear: both; }
+.school__logo { display: block; position: relative; width: 250px; height: 170px; margin: 0 auto; }
+.school__logo:hover { opacity: 0.7; }
+.school__logo img { width: 140px; height: 140px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.school__info { margin: 10px auto; text-align: center; }
+.school__info p, .school__info span { color: #9ba1a5; font-size: 20px; margin-top: 15px; }
+.school__info p a, .school__info span a { color: #3ab8ea; text-decoration: underline; margin-right: 5px; -webkit-transition: 0.3s; transition: 0.3s; }
+.school__info p a:hover, .school__info span a:hover { text-decoration: none; }
+.school__info .online { display: inline-block; position: relative; padding-left: 15px; }
+.school__info .online:before { content: ""; position: absolute; top: 13px; left: 2px; width: 4px; height: 4px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #63bd70; }
+
 .icon-messege { display: inline-block; background-image: url("../img/icons.png"); width: 27px; height: 27px; background-position: 0px -32px; }
 
 .icon-bell { display: inline-block; background-image: url("../img/icons.png"); width: 23px; height: 27px; background-position: -31px -32px; }
 
 .icon-users { display: inline-block; background-image: url("../img/icons.png"); width: 28px; height: 28px; background-position: 0px 0px; }
 
+.icon-heart { display: inline-block; background-image: url("../img/icons.png"); width: 29px; height: 27px; background-position: -32px 0px; }
+
+.icon-heart { position: absolute; top: 20px; left: 25px; }
+
 .vcenter { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.get__left { float: left; }
+
+.get__right { float: right; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
