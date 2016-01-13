@@ -1,4 +1,4 @@
-//= ../../bower_components/jquery/dist/jquery.min.js
+//= lib/jquery.js
 //= partials/head.js
 
 //= app.js

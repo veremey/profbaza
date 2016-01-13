@@ -65,8 +65,10 @@
 		width: 50%
 		height: 155px
 		border-right: 1px solid $body
+		border-bottom: 1px solid $body
 		&:nth-child(even)
 			border: none
+			border-bottom: 1px solid $body
 		.vcenter
 			top: 40%
 		img
@@ -77,3 +79,39 @@
 			bottom: 20px
 			left: 50%
 			+trx(-50%)
+
+/////////////////////////////
+//  telephone
+
+.telephone
+	color: #FFF
+	margin-bottom: 30px // del
+	+clr
+	.side__wrap
+		background-color: $blue
+	&__link
+		position: relative
+		display: block
+		padding-left: 35px
+		margin-bottom: 10px
+		font-size: 22px
+		text-transform: uppercase
+		color: #FFF
+		+oss
+		p
+			display: inline-block
+			text-transform: uppercase
+			color: #93e0ff
+
+////////////////////////
+// locate
+
+.locate
+	padding-left: 35px
+	position: relative
+
+/////////////////////
+//   map
+.mapin
+	width: 100%
+	height: 220px
