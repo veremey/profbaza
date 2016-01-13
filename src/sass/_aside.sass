@@ -6,6 +6,8 @@
 	&__wrap
 		background-color: #FFF
 		padding: 25px
+	.dignity
+		margin-bottom: 30px
 
 .school
 	+clr
@@ -50,3 +52,28 @@
 				-webkit-border-radius: 100%
 				border-radius: 100%
 				background-color: $green
+
+.dignity
+	background-color: #FFF
+	border-top: 1px solid $body
+	border-bottom: 1px solid $body
+	text-align: center
+	+clr
+	&__item
+		position: relative
+		float: left
+		width: 50%
+		height: 155px
+		border-right: 1px solid $body
+		&:nth-child(even)
+			border: none
+		.vcenter
+			top: 40%
+		img
+			-webkit-border-radius: 100%
+			border-radius: 100%
+		p
+			position: absolute
+			bottom: 20px
+			left: 50%
+			+trx(-50%)
