@@ -2,10 +2,12 @@
 	a.school__logo
 		img(src="img/user.jpg" alt="Иллюстрация")
 		block schoolCheck
-			//-
+			span.school__check
+				i.icon-check.center
 	.school__info
-		h2.title__school.vip__big languagelink
-		p
-			a(href="#") 11
-			| Отзывы
-		span.online на сайте
+		block schoolText
+			h2.title__school.vip__big languagelink
+			p
+				a(href="#") 11
+				| Отзывы
+			span.online на сайте

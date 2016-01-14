@@ -21,8 +21,14 @@ html
 						include includes/aside/map
 					include includes/aside/sideshare
 
-			main.content
+			main.content.get__left
 				block contant
+					include includes/content/breadcrumbs
+					.contant-container
+						h2.title__container Курсы
+						include includes/content/langAcordion
+						include includes/content/langAcordion
+
 
 			aside.side.get__right
 				block asideRight

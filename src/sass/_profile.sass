@@ -1,0 +1,119 @@
+.breadcrumbs
+	background-color: #FFF
+	padding: 15px 35px 10px
+	border-bottom: 1px solid $body
+	+clr
+	a
+		position: relative
+		float: left
+		vertical-align: top
+		padding-right: 40px
+		margin-right: 20px
+		color: $gray
+		line-height: 30px
+		&:hover
+			color: $black
+			.icon-right
+				+gray
+		&:last-child
+			.icon-right
+				display: none
+		.icon-right
+			position: absolute
+			top: 3px
+			right: 0
+
+.contant-container
+	background-color: #FFF
+	padding: 1px 30px 40px
+	+clr
+
+///////////////////////////////
+///   lang
+
+
+.lang
+	background-color: $body
+	padding: 20px 30px
+	margin-bottom: 2px
+	cursor: pointer
+	+clr
+	&.is_active
+		height: auto
+		cursor: default
+		.icn-plus
+			+rotate(-90)
+		.direction
+			display: block
+	&:hover
+		background-color: #E9EFF1
+	&:active
+		.btn__lang
+			+gray
+	.header__lang
+		vertical-align: middle
+		+clr
+		&_name
+			float: left
+		&_cost
+			float: right
+	&__text
+		display: none
+		margin: 20px 0 10px
+		padding: 30px 50px 30px 30px
+		background-color: #fff
+		+clr
+		.direction
+			margin: 0
+			padding: 0
+		+ .direction
+			display: none
+
+// .is_active
+.direction
+	background-color: #FFF
+	padding: 30px 50px 30px 30px
+	text-transform: uppercase
+	+osb
+	+clr
+	h3
+		float: left
+	p
+		float: right
+		color: $green
+.programm
+	width: 100%
+	margin-top: 35px
+	+clr
+.programm__name
+	margin-bottom: 17px
+	+clr
+	p
+		float: left
+		width: 27%
+		color: $gray
+		vertical-align: top
+	span
+		width: 70%
+		float: left
+		vertical-align: top
+		color: $black
+	a.read__more
+		width: 73%
+		float: right
+		text-align: left
+		text-transform: uppercase
+		padding: 25px 0
+		box-shadow: 0 1px 17px 16px #fff
+		span
+			color: #38b7ea
+			text-decoration: underline
+		&:hover
+			span
+				text-decoration: none
+
+.programm__text
+	width: 70%
+	p
+		color: $black
+		vertical-align: top
