@@ -1,8 +1,9 @@
 
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
-            center: [55.74630, 37.6105],
-            zoom: 17
+            center: [43.238253, 76.945465],
+            zoom: 17,
+            controls: []
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             hintContent: 'ул. Академика Янгеля 22 '
@@ -26,14 +27,12 @@ ymaps.ready(function() {
 
 
 
-    $(document).ready(function() {
-       // alert(3434);
-       // console.log('width:' + screen.width);
-      if( screen.width <= 760 ) {
-        myMap.behaviors
-            .disable(['rightMouseButtonMagnifier', 'drag']);
-      };
-    });
+    // $(document).ready(function() {
+    //   if( screen.width <= 760 ) {
+    //     myMap.behaviors
+    //         .disable(['rightMouseButtonMagnifier', 'drag']);
+    //   };
+    // });
 
 
 });
@@ -41,26 +40,26 @@ ymaps.ready(function() {
 
 
 
-var myMap;
+// var myMap;
 
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(init);
-function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
-    myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.746993, 37.608284], // Москва
-        zoom: 17
-    });
+// // Дождёмся загрузки API и готовности DOM.
+// ymaps.ready(init);
+// function init () {
+//     // Создание экземпляра карты и его привязка к контейнеру с
+//     // заданным id ("map").
+//     myMap = new ymaps.Map('map', {
+//         // При инициализации карты обязательно нужно указать
+//         // её центр и коэффициент масштабирования.
+//         center: [55.746993, 37.608284], // Москва
+//         zoom: 17
+//     });
 
-    // document.getElementById('destroyButton').onclick = function () {
-    //     // Для уничтожения используется метод destroy.
-    //     myMap.destroy();
-    // };
+//     // document.getElementById('destroyButton').onclick = function () {
+//     //     // Для уничтожения используется метод destroy.
+//     //     myMap.destroy();
+//     // };
 
-  };
+//   };
 
   // смотри js/yandexMapInit.js
 

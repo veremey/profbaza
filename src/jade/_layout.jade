@@ -1,4 +1,4 @@
-//- это основнойшаблон документ с тремя колонками
+//- это основной шаблон с тремя колонками
 
 //-добавим миксины
 include includes/mixin
@@ -13,11 +13,23 @@ html
 		//BEGIN out
 		.out
 			aside.side.get__left
-				include includes/aside/leftTop
-				include includes/aside/telephone
-				.side__wrap
-					include includes/aside/locate
-					include includes/aside/map
+				block asideLeft
+					include includes/aside/leftTop
+					include includes/aside/telephone
+					.side__wrap
+						include includes/aside/locate
+						include includes/aside/map
+					include includes/aside/sideshare
+
+			main.content
+				block contant
+
+			aside.side.get__right
+				block asideRight
+					h2.title__side Популярные курсы
+					include includes/aside/training
+					img.flash(src="img/flash.jpg" alt="Иллюстрация")
+
 
 
 		//END out

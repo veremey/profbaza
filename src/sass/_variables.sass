@@ -4,3 +4,45 @@
 	float: left
 .get__right
 	float: right
+.clear
+	clear: both
+	display: table
+	height: 0
+.vip__small
+	position: relative
+	display: inline-block
+	&:after
+		content: "vip"
+		position: absolute
+		top: 0
+		right: -40px
+		text-align: center
+		background-color: #cd7fe2
+		color: #fff
+		text-transform: uppercase
+		font-size: 8px
+		padding: 2px 5px
+		border-radius: 4px
+		letter-spacing: 1px
+		+osbl
+.vip__big
+	position: relative
+	display: inline-block
+	&:after
+		content: "vip"
+		position: absolute
+		top: 10px
+		right: -40px
+		text-align: center
+		background-color: #cd7fe2
+		color: #fff
+		text-transform: uppercase
+		font-size: 11px
+		padding: 2px 5px
+		border-radius: 4px
+		letter-spacing: 1px
+		+osbl
+.flash
+	width: 100%
+	height: auto
+	max-width: 100%
