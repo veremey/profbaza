@@ -10,34 +10,44 @@ button
 		+os
 		&:hover
 			color: $dark
-
-
-.btn__lang
-	position: relative
-	display: inline-block
-	vertical-align: bottom
-	width: 28px
-	height: 28px
-	margin-right: 20px
-	-webkit-border-radius: 100%
-	border-radius: 100%
-	border: 1px solid $blue
-	+tr(.3s)
-	&:hover
-		+gray
-	.icn-minus
-		+vcenter
-		width: 12px
-		height: 2px
-		background-color: $blue
-	.icn-plus
-		+rotate(0)
-		position: absolute
-		top: 7px
-		left: 50%
-		margin-left: -1px
-		width: 2px
-		height: 12px
-		background-color: $blue
-		+tr(.4s)
+	&__blue
+		height: 48px
+		border: 1px solid $blue
+		-webkit-border-radius: 48px
+		border-radius: 48px
+		color: $blue
+		font-size: 18px
+		padding: 0 40px
+		+tr(.3s)
+		&:hover
+			background-color: $blue
+			color: #FFF
+	&__lang
+		position: relative
+		display: inline-block
+		vertical-align: bottom
+		width: 28px
+		height: 28px
+		margin-right: 20px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		border: 1px solid $blue
+		+tr(.3s)
+		&:hover
+			+gray
+		.icn-minus
+			+vcenter
+			width: 12px
+			height: 2px
+			background-color: $blue
+		.icn-plus
+			+rotate(0)
+			position: absolute
+			top: 7px
+			left: 50%
+			margin-left: -1px
+			width: 2px
+			height: 12px
+			background-color: $blue
+			+tr(.4s)
 

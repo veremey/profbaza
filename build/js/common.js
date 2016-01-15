@@ -37,5 +37,20 @@ $(document).ready(function() {
 		// 	},
 		// ]
 	});
+	$('.gallery').slick({
+		// infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 200000,
+		prevArrow: $('.js-gallery__back'),
+		nextArrow: $('.js-gallery__next')
+	});
+	//если фоток или видео в .gallery меньше 4 удаляем кнопки управления слайдером
+	if($('.gallery__item').length <= 4){
+		$('.js-nextSlider').find('.caption__btn').remove();
+		};
+
 
 });

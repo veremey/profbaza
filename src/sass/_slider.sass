@@ -24,8 +24,8 @@
 			+os
 	.slick-arrow
 		z-index: 10
-	.slick-prev
 		top: 18%
+	.slick-prev
 		&:before
 			content: ""
 			+s(slide-prev)
@@ -33,3 +33,14 @@
 		&:before
 			content: ""
 			+s(slide-next)
+
+/////////////////////
+// gallery
+
+.gallery
+	+clr
+	&__item
+		width: 230px
+		height: 165px
+	img
+		margin: 0 auto

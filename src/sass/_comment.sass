@@ -1,0 +1,60 @@
+.comment
+	background-color: #FFF
+	+clr
+	&__item
+		padding: 30px 30px 00px
+		+clr
+		&:last-child
+			margin-bottom: 70px
+	&__user
+		width: 170px
+		float: left
+		&:hover
+			img
+				opacity: 0.7
+			h3
+				color: $dark
+		img
+			width: 100px
+			height: 100px
+			-webkit-border-radius: 100%
+			border-radius: 100%
+			margin-bottom: 20px
+			+tr(.3s)
+		h3
+			color: $blue
+			font-size: 20px
+			margin-bottom: 10px
+			+tr(.3s)
+		p
+			font-size: 14px
+			color: $gray
+	&__contant
+		width: calc(100% - 200px)
+		float: right
+		+clr
+	&__text
+		position: relative
+		padding: 35px 40px
+		border: 1px solid #efefef
+		+clr
+		&:before
+			content: ""
+			position: absolute
+			top: -1px
+			left: -37px
+			display: inline-block
+			+s(comment-corner)
+	.dignity
+		border: none
+		border-right: 1px solid $body
+		border-left: 1px solid $body
+		&__item
+			width: 25%
+			&:nth-of-type(2)
+				border-right: 1px solid $body
+	.btn__blue
+		display: block
+		margin: 75px auto 65px
+.study
+	text-align: center
