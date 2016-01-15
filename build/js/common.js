@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	$('.js_lang_acardion').on('click', function() {
-		$(this).toggleClass('is_active').children('.js_lang_item').slideToggle();
+		$(this).toggleClass('is_active').next('.js_lang_item');
 		return false;
 	});
 
@@ -13,6 +13,29 @@ $(document).ready(function() {
 		embedCSS: false,
 		moreLink: '<a class="read__more" href="#"><span>Читать полностью </span></a',
 		lessLink: '<a class="read__more" href="#"><span>Скрыть </span></a>'
+	});
+
+	$('.cycle').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		// speed: 600,
+		// centerMode: true,
+		// variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 200000,
+		// prevArrow: $('.js-slider__back'),
+		// nextArrow: $('.js-slider__next'),
+		// responsive: [
+		// 	{
+		// 		breakpoint: 765,
+		// 		settings: {
+		// 			slidesToShow: 1,
+		// 			variableWidth: false
+		// 		}
+		// 	},
+		// ]
 	});
 
 });

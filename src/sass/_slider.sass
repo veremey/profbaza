@@ -1,1 +1,35 @@
-// Normally mainpage styles
+// Normally sliders styles
+
+.cycle
+	padding-bottom: 40px
+	+clr
+	&__item
+		padding: 0 50px
+		text-align: center
+		img
+			width: 115px
+			height: 115px
+			border-radius: 100%
+			margin: 25px auto 20px
+	&__text
+		h3
+			text-transform: uppercase
+			font-size: 14px
+			color: $dark
+			+osb
+		p
+			font-size: 14px
+			line-height: 23px
+			margin-top: 10px
+			+os
+	.slick-arrow
+		z-index: 10
+	.slick-prev
+		top: 18%
+		&:before
+			content: ""
+			+s(slide-prev)
+	.slick-next
+		&:before
+			content: ""
+			+s(slide-next)
