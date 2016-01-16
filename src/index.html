@@ -10,7 +10,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Play:700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" media="all" href="css/style.css" >
 
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/lib/yandexMapInit.js"></script>
 
@@ -49,7 +48,7 @@
 			</div>
 			//=include partials/slider/cycleSlider.html
 		</div>
-		<div class="border-container js-nextSlider">
+		<div class="border-container js-nextSlider4">
 			<div class="caption">
 				<h3 class="title__light"> Фото и видео материалы</h3>
 				<div class="caption__btn">
@@ -72,7 +71,34 @@
 				</div>
 			</div>
 		</div>
+
 		//=include partials/content/commentBlock.html
+
+		<div class="border-container">
+			<div class="caption">
+				<h3 class="title__light">Акции</h3>
+				<div class="caption__btn">
+					<button class="slide-prev js-sale__back"></button>
+					<button class="slide-next js-sale__next"></button>
+				</div>
+			</div>
+		</div>
+		<div class="contant-container">
+			//=include partials/slider/saleSlider.html
+		</div>
+
+		<div class="border-container">
+			<div class="caption">
+				<h3 class="title__light"> Вакансии</h3>
+				<div class="caption__btn">
+					<button class="slide-prev js-vacancy__back"></button>
+					<button class="slide-next js-vacancy__next"></button>
+				</div>
+			</div>
+		</div>
+		<div class="contant-container">
+			//=include partials/slider/vacancySlider.html
+		</div>
 	</main>
 	<!-- end MAIN -->
 

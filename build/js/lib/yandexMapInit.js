@@ -25,43 +25,4 @@ ymaps.ready(function() {
      myMap.behaviors
          .disable(['scrollZoom']);
 
-
-
-    // $(document).ready(function() {
-    //   if( screen.width <= 760 ) {
-    //     myMap.behaviors
-    //         .disable(['rightMouseButtonMagnifier', 'drag']);
-    //   };
-    // });
-
-
 });
-
-
-
-
-// var myMap;
-
-// // Дождёмся загрузки API и готовности DOM.
-// ymaps.ready(init);
-// function init () {
-//     // Создание экземпляра карты и его привязка к контейнеру с
-//     // заданным id ("map").
-//     myMap = new ymaps.Map('map', {
-//         // При инициализации карты обязательно нужно указать
-//         // её центр и коэффициент масштабирования.
-//         center: [55.746993, 37.608284], // Москва
-//         zoom: 17
-//     });
-
-//     // document.getElementById('destroyButton').onclick = function () {
-//     //     // Для уничтожения используется метод destroy.
-//     //     myMap.destroy();
-//     // };
-
-//   };
-
-  // смотри js/yandexMapInit.js
-
-
-  //  #####  Карта AND ######

@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 
-
+	//Читать больше
 	$('.programm__name span').readmore({
 		speed: 75,
 		collapsedHeight: 200,
@@ -38,6 +38,29 @@ $(document).ready(function() {
 		// 	},
 		// ]
 	});
+
+	//akcii
+	$('.sale').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 200000,
+		prevArrow: $('.js-sale__back'),
+		nextArrow: $('.js-sale__next'),
+		// responsive: [
+		// 	{
+		// 		breakpoint: 765,
+		// 		settings: {
+		// 			slidesToShow: 1,
+		// 			variableWidth: false
+		// 		}
+		// 	},
+		// ]
+	});
+
+	//fotki
 	$('.gallery').slick({
 		// infinite: true,
 		slidesToShow: 4,
@@ -50,7 +73,9 @@ $(document).ready(function() {
 	});
 	//если фоток или видео в .gallery меньше 4 удаляем кнопки управления слайдером
 	if($('.gallery__item').length <= 4){
-		$('.js-nextSlider').find('.caption__btn').remove();
+		$('.js-nextSlider4').find('.caption__btn').remove();
 		};
+
+
 
 });
