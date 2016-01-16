@@ -74,7 +74,48 @@ $(document).ready(function() {
 	//если фоток или видео в .gallery меньше 4 удаляем кнопки управления слайдером
 	if($('.gallery__item').length <= 4){
 		$('.js-nextSlider4').find('.caption__btn').remove();
-		};
+	};
+
+
+
+	function ui_slider() {
+		$(".slid").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			slider.slider({
+				range: 'min',
+				min: 0,
+				max: 10,
+				step: 1,
+				value: 4,
+				slide: function( event, ui ) {
+					$(this).find(".ui-slider-handle").html("<span></span>");
+					var handle_0 = $(this).children(".ui-slider-handle").find("span")
+					handle_0.text(ui.value);
+				}
+			});
+		});
+		$(".slid.green").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			slider.slider({
+				value: 3,
+			});
+		});
+		$(".slid.violet").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			slider.slider({
+				value: 8,
+			});
+		});
+		$(".slid.yellow").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			slider.slider({
+				value: 0,
+			});
+		});
+
+	}
+	ui_slider();
+
 
 
 
