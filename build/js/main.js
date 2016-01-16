@@ -49,8 +49,9 @@ $(document).ready(function() {
 		collapsedHeight: 200,
 		embedCSS: false,
 		moreLink: '<a class="read__more" href="#"><span>Читать полностью </span></a',
-		lessLink: '<a class="read__more" href="#"><span>Скрыть </span></a>'
+		lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span></a>'
 	});
+
 
 	$('.cycle').slick({
 		infinite: true,
@@ -88,6 +89,5 @@ $(document).ready(function() {
 	if($('.gallery__item').length <= 4){
 		$('.js-nextSlider').find('.caption__btn').remove();
 		};
-
 
 });

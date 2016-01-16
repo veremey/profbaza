@@ -28,7 +28,10 @@
 =gh($color1, $color2)
 	background-color: $color1
 	background-image: linear-gradient(to right, $color1, $color2)
-
+=border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
 // easy vertical-align at center
 =vcenter
 	position: absolute
@@ -75,6 +78,8 @@
 //+font(black, cytiapro-black-webfont)
 
 =placeholder
+	&:-ms-input-placeholder
+		@content
 	&::placeholder
 		@content
 

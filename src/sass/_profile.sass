@@ -98,10 +98,13 @@
 	a.read__more
 		width: 73%
 		float: right
+		text-transform: lowercase
 		text-align: left
-		text-transform: uppercase
 		padding: 25px 0
 		box-shadow: 0 1px 17px 16px #fff
+		&.is_active
+			-webkit-box-shadow: none
+			box-shadow: none
 		span
 			color: #38b7ea
 			text-decoration: underline

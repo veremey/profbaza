@@ -6,7 +6,7 @@ gulp.task('watch', [
     'sprite:watch',
     'sass:watch',
     'copy:watch',
-    // 'html:watch',
+    'html:watch',
     'jade:watch',
     'font:watch',
     'js:watch'
@@ -16,5 +16,5 @@ gulp.task('watch', [
 gulp.task('delete', function (cb) {
     rimraf('./'+config.dest.root, cb);
 });
-gulp.task('build', ['font','sprite','copy','js','sass'], function() {}); // 'html', - перед фонтом
+gulp.task('build', ['html','font','sprite','copy','js','sass'], function() {});
 gulp.task('default', ['build', 'server', 'watch'], function() {});

@@ -57,14 +57,30 @@
 		display: block
 		margin: 75px auto 65px
 .study
+	padding: 30px
+	background-color: #FFF
 	text-align: center
+	+clr
 	p
 		margin: 25px auto 30px
 
 .inervision
+	background-color: $body
 	padding: 45px 14%
 	textarea
 		width: 100%
 		height: 180px
 		padding: 20px 30px
+		margin-bottom: 50px
 		background-color: #FFF
+		border: 1px solid $n
+		outline: none
+		resize: none
+		+tr(.3s)
+		&:hover,
+		&:focus
+			border: 1px solid $gray
+		+placeholder
+			color: $gray
+			font-size: 16px
+			+osl
