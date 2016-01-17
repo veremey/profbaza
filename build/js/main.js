@@ -1709,6 +1709,18 @@ $(document).ready(function() {
 
 
 
+	//accordion
+
+	$('.action').on('mouseenter', function() {
+
+		$(this).children('.accord').slideToggle();
+
+		}).on('mouseleave', function() {
+
+		$(this).children('.accord').slideToggle();
+
+	});
+
 
 
 	$('.cycle').slick({

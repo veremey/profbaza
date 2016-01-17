@@ -15,6 +15,12 @@ $(document).ready(function() {
 		lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span></a>'
 	});
 
+	//accordion
+	$('.action').on('mouseenter', function() {
+		$(this).children('.accord').slideToggle();
+		}).on('mouseleave', function() {
+		$(this).children('.accord').slideToggle();
+	});
 
 	$('.cycle').slick({
 		infinite: true,
