@@ -9,6 +9,16 @@
 	.dignity
 		margin-bottom: 30px
 
+.side__small
+	float: right
+	width: 240px
+	vertical-align: top
+	+clr
+	img
+		width: 240px
+		margin-bottom: 30px
+		vertical-align: top
+
 .school
 	text-align: center
 	+clr
@@ -62,6 +72,21 @@
 				-webkit-border-radius: 100%
 				border-radius: 100%
 				background-color: $green
+
+.accord
+	height: 0
+	overflow: hidden
+	margin-left: 50px
+	margin-top: 10px
+	+tr(3s)
+	li
+		display: block
+	a
+		display: block
+		padding: 5px 5px 5px 0
+		&:hover
+			color: $green
+
 
 .dignity
 	background-color: #FFF

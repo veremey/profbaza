@@ -92,7 +92,14 @@ body
 	margin: 0 auto
 	position: relative
 	+clr
-
+.content
+	width: calc(100% - 720px)
+	margin-left: 20px
+	+clr
+.container
+	width: calc(100% - 620px)
+	margin-left: 20px
+	+clr
 
 .contant-container
 	background-color: #FFF
@@ -126,3 +133,15 @@ body
 	button
 		display: inline-block
 		vertical-align: top
+.action
+	.title__accord
+		position: relative
+		padding-left: 50px
+	&:hover
+		.title__accord
+			color: $green
+		.icon-next
+			+s(icon-next-green)
+		.accord
+			height: auto
+			+tr(1s)
