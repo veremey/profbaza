@@ -1,0 +1,124 @@
+.company
+	background-color: #FFF
+	margin-bottom: 20px
+	+clr
+	&__header
+		position: relative
+		border-bottom: 1px solid $body
+		+clr
+	&__logo,
+	&__feedback
+		position: relative
+		float: left
+		width: 30%
+		height: 105px
+		white-space: nowrap
+	&__logo
+		border-right: 1px solid $body
+		img
+			float: left
+		.vip__big
+			&:after
+				top: 3px
+		.title__name
+			margin-left: 60px
+	&__feedback
+		border-right: 1px solid $body
+		p
+			color: $gray
+			float: left
+			margin-left: 95px
+		strong
+			color: $black
+	.icon-heart
+		top: 15px
+		right: 20px
+		left: auto
+	&__contant
+		display: table
+		width: 100%
+		table-layout: fixed
+		border-bottom: 1px solid $body
+		+clr
+	&__text
+		display: table-cell
+		width: 60%
+		padding: 25px
+		border-right: 1px solod $body
+		p
+			color: $gray
+	&__box
+		display: table-cell
+		width: 40%
+		position: relative
+		.vcenter
+			width: 75%
+		&_item
+			white-space: nowrap
+			img
+				width: 70px
+				height: 70px
+				display: inline-block
+				margin-right: 10px
+				margin-bottom: 10px
+				vertical-align: top
+				&:nth-child(4n)
+					margin-right: 0
+	&__footer
+		+clr
+	&__contact
+		float: left
+		width: 30%
+		border-right: 1px solid $body
+		padding: 20px
+		.telephone__link
+			color: $black
+			margin-bottom: 0
+			+tr(.3s)
+			i
+				+gray
+			&:hover
+				color: $blue
+				p
+					color: $blue
+			p
+				color: $gray
+		.btn__telephone
+			margin-top: 0
+			color: $blue
+		.icon-tel
+			+gray
+	&__locate
+		float: left
+		width: 30%
+		border-right: 1px solid $body
+		padding: 20px
+		color: $gray
+		i
+			+gray
+		a
+			color: $gray
+			text-decoration: underline
+			+tr(.3s)
+			&:hover
+				text-decoration: none
+				color: $blue
+	&__site
+		padding: 40px 25px
+		width: 30%
+		float: left
+		a
+			position: relative
+			padding-left: 30px
+			margin-right: 20px
+			color: $gray
+			text-decoration: underline
+			+tr(.3s)
+			i
+				+gray
+				+tr(.3s)
+			&:hover
+				text-decoration: none
+				color: $blue
+				i
+					+gray-zero

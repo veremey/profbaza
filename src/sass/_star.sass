@@ -1,0 +1,33 @@
+.stars
+	position: relative
+	float: left
+	width: 83px
+	height: 13px
+	bottom: -10px
+	z-index: 2
+	.star
+		display: inline-block
+		vertical-align: middle
+		width: 13px
+		height: 11px
+		margin-right: 0
+	.star_l
+		display: block
+		float: left
+		width: 7px
+		height: 11px
+		background: url(../img/star_p.png)
+		cursor: pointer
+		margin-right: 0
+	.star_r
+		display: block
+		float: left
+		width: 6px
+		height: 11px
+		background: url(../img/star_p.png) 100% 0 no-repeat
+		cursor: pointer
+		margin-right: 0
+	.star_l.active
+		background: url(../img/star_a.png) 0 0 no-repeat
+	.star_r.active
+		background: url(../img/star_a.png) 100% 0 no-repeat
