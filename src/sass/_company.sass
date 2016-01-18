@@ -3,36 +3,82 @@
 	margin-bottom: 20px
 	+clr
 	&__header
+		display: table
+		table-layout: fixed
+		width: 100%
 		position: relative
 		border-bottom: 1px solid $body
 		+clr
 	&__logo,
 	&__feedback
+		display: table-cell
 		position: relative
-		float: left
 		width: 30%
-		height: 105px
 		white-space: nowrap
 	&__logo
 		border-right: 1px solid $body
-		img
+		padding: 25px 20px
+		white-space: nowrap
+		> img
 			float: left
-		.vip__big
-			&:after
-				top: 3px
+			width: 45px
+			vertical-align: top
 		.title__name
-			margin-left: 60px
+			padding-left: 10px
+			float: left
+			img
+				display: inline-block
+				margin-left: 7px
+				float: none
 	&__feedback
+		display: table-cell
 		border-right: 1px solid $body
+		vertical-align: top
+		+clr
 		p
 			color: $gray
 			float: left
 			margin-left: 95px
 		strong
 			color: $black
+		&_wrap
+			position: relative
+			display: table
+			table-layout: fixed
+			width: 100%
+			vertical-align: top
+	.rate
+		display: table-cell
+		position: relative
+		width: 15%
+		white-space: nowrap
+		border-right: 1px solid $body
+		p
+			margin: 10px 0 15px
+	.experience
+		display: table-cell
+		position: relative
+		width: 15%
+		white-space: nowrap
+		border-right: 1px solid $body
+		p
+			margin: 15px 0 0
+	&__cost
+		display: table-cell
+		position: relative
+		width: 28%
+		border-right: 1px solid $body
+		white-space: nowrap
+		+clr
+		p
+			color: $gray
+			float: left
+			margin-top: 15px
+		strong
+			color: $black
 	.icon-heart
-		top: 15px
-		right: 20px
+		top: 40px
+		right: 50px
 		left: auto
 	&__contant
 		display: table
@@ -44,7 +90,7 @@
 		display: table-cell
 		width: 60%
 		padding: 25px
-		border-right: 1px solod $body
+		border-right: 1px solid $body
 		p
 			color: $gray
 	&__box
@@ -73,9 +119,13 @@
 			i
 				+gray
 	&__footer
+		position: relative
+		width: 100%
+		display: table
+		table-layout: fixed
 		+clr
 	&__contact
-		float: left
+		display: table-cell
 		width: 30%
 		border-right: 1px solid $body
 		padding: 20px
@@ -97,7 +147,7 @@
 		.icon-tel
 			+gray
 	&__locate
-		float: left
+		display: table-cell
 		width: 30%
 		border-right: 1px solid $body
 		padding: 20px
@@ -114,7 +164,7 @@
 	&__site
 		padding: 40px 25px
 		width: 30%
-		float: left
+		display: table-cell
 		a
 			position: relative
 			padding-left: 30px
@@ -130,3 +180,43 @@
 				color: $blue
 				i
 					+gray-zero
+
+.consult__logo
+	display: table-cell ////
+	position: relative
+	width: 30%
+	border-right: 1px solid $body
+	padding: 25px 20px
+	white-space: nowrap
+	> img
+		float: left
+		width: 70px
+		height: 70px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		vertical-align: top
+	.title__name
+		max-width: 200px
+		padding-left: 10px
+		float: left
+		img
+			display: inline-block
+			margin-left: 7px
+			float: none
+			vertical-align: baseline
+		br
+			+ img
+				margin-left: 0
+
+
+.profesional
+	margin-bottom: 5px
+	+clr
+	&__item
+		color: $gray
+		float: left
+		width: 28%
+	&__text
+		color: $gray
+		float: right
+		width: 70%
