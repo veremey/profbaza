@@ -349,6 +349,9 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .company__box_item { white-space: nowrap; }
 .company__box_item img { width: 70px; height: 70px; display: inline-block; margin-right: 10px; margin-bottom: 10px; vertical-align: top; }
 .company__box_item img:nth-child(4n) { margin-right: 0; }
+.company__box_item a { color: #9ba1a5; text-decoration: underline; }
+.company__box_item a:hover { color: #3ab8ea; text-decoration: none; }
+.company__box_item i { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
 .company__footer { *zoom: 1; }
 .company__footer:after { content: " "; display: table; clear: both; }
 .company__contact { float: left; width: 30%; border-right: 1px solid #f5f8f9; padding: 20px; }
