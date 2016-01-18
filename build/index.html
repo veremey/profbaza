@@ -2,13 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Teacher</title>
+	<title>TeacherProfile </title>
 	<meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=cyrillic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Play:700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" media="all" href="css/style.css" >
+
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/lib/yandexMapInit.js"></script>
 
 	<script src="js/main.js"></script>
 
@@ -54,270 +57,502 @@
 </header>
 <!--BEGIN out-->
 <div class="out">
-
 	<aside class="side get__left">
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
+		<div class="side__wrap">
+			<a href="#" class="icon-heart"></a>
+			<div class="school">
+				<a href="#" class="school__logo">
+					<img src="img/user.jpg" alt="Иллюстрация">
+					<span class="school__check">
+						<i class="icon-check center"></i>
+					</span>
+				</a>
+				<div class="school__info">
+					block schoolText
+						<h2 class="title__school vip__big">languagelink</h2>
+						<p>
+							<a href="#">11</a>
+							Отзывы
+						</p>
+						<span class="online">на сайте</span>
+				</div>
+			</div>
+		<div class="dignity">
+			<div class="dignity__item">
+				<div class="vcenter">
+					<img src="img/dignity1.jpg" alt="Иллюстрация">
+				</div>
+				<p>Пунктуальность</p>
+			</div>
+			<div class="dignity__item">
+				<div class="vcenter">
+					<img src="img/dignity2.jpg" alt="Иллюстрация">
+				</div>
+				<p>Пунктуальность</p>
+			</div>
+			<div class="dignity__item">
+				<div class="vcenter">
+					<img src="img/dignity3.jpg" alt="Иллюстрация">
+				</div>
+				<p>Пунктуальность</p>
+			</div>
+			<div class="dignity__item">
+				<div class="vcenter">
+					<img src="img/dignity4.jpg" alt="Иллюстрация">
+				</div>
+				<p>Пунктуальность</p>
+			</div>
 		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
 		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
+		<div class="telephone">
+			<div class="side__wrap">
+				<a href="tel:+77071234567" class="telephone__link">
+					<i class="icon-tel"></i>
+					+7 707 <p>xxx xx xx</p>
+				</a>
+				<a href="tel:+77071234567" class="telephone__link">
+					+7 707 <p>xxx xx xx</p>
+				</a>
+				<button class="btn__telephone">показать номера</button>
+			</div>
 		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
+		<div class="side__wrap">
+			<p class="locate">
+				<i class="icon-locate-blue"></i>
+				Казахстан, Алматы, м. Улица
+				Академика Янгеля 22 (вход со стороны центар)
+			</p>
+			<div class="mapin" id="mapin">
+				<div id="map"></div>
+			</div>
 		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
+		<div class="sideshare">
+			<div class="side__wrap">
+				<a href="www.elka.kz">
+					<i class="icon-planet"></i>
+					www.elka.kz
+				</a>
+				<div class="clear"></div>
+				<a href="mailto:info@elka.kz">
+					<i class="icon-mail"></i>
+					info@elka.kz
+				</a>
+			</div>
 		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
-		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
-		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord">
-				<i class="icon-next"></i>
-				Курсы дизайна
-			</a>
-			<ul class="accord">
-				<li><a href="#">Дизайн интерьера</a></li>
-				<li><a href="#">Декорирование</a></li>
-				<li><a href="#">Ландшафтный дизайн</a></li>
-				<li><a href="#">Графический дизайн</a></li>
-				<li><a href="#">Фотоисскуство</a></li>
-			</ul>
-		</div>
-		<div class="side__wrap action">
-			<a href="#" class="title__accord" style="color: #3ab8ea;">
-				<i class="icon-next"></i>
-				Все курсы
-			</a>
-
-		</div>
-
 	</aside>
 
 	<!-- MAIN -->
 	<main class="content get__left">
-		<section class="title__section">
-			<h2 class="title__light">
-				Курсы английского в Алматы
-			</h2>
-			<p>Найдено 43 компании</p>
+		<section class="breadcrumbs">
+			<a href="#">Главная<i class="icon-right"></i></a>
+			<a href="#">Репетиторы Английского<i class="icon-right"></i></a>
+			<a href="#">Алина Евтушенко<i class="icon-right"></i></a>
 		</section>
+		<div class="contant-container">
+			<div class="caption" >
+				<h2 class="title__container">Курсы</h2>
+				<div class="coach">
+					<div class="coach__wrap">
+						<div class="coach__item">
+							<p>У себя <a href="#">(На карте)</a></p>
+						</div>
+						<div class="coach__item">
+							<p>Выезд <a href="#">(На карте)</a></p>
+						</div>
+						<div class="coach__item">
+							<p>Удаленно</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<div class="company">
+			<div class="languages">
+				<div class="lang">
+					<div class="lang__header js_lang_acardion">
+						<div class="lang__header_name">
+							<button class="btn__lang">
+								<i class="icn-minus"></i>
+								<i class="icn-plus"></i>
+							</button>
+							<span>Английский язык</span>
+						</div>
+						<div class="coach__wrap">
+							<div class="coach__item">
+								<p>от 1000 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 1200 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 800 руб/ч</p>
+							</div>
+						</div>
+					</div>
+					<div class="lang__wrap js_lang_item" >
+						<div class="lang__text"  style="background-color: #f5f8f9;">
+							<div class="programm">
+								<div class="programm__name">
+									<p>Тип программы:</p>
+									<span>разговорные клубы</span>
+								</div>
+								<div class="programm__name">
+									<p>Кол-во занятий:</p>
+									<span>2 раза в неделю по 90 мин, 8 занятий в месяц</span>
+								</div>
+								<div class="programm__name">
+									<p>Состав группы:</p>
+									<span>6-9 человек</span>
+								</div>
+								<div class="programm__name">
+									<p>Возраст аудитории:</p>
+									<span>школьники, студенты, взрослые</span>
+								</div>
+								<div class="programm__name">
+									<p>С уровнем знаний:</p>
+									<span>с нуля, начальный</span>
+								</div>
+								<div class="programm__name">
+									<p>Описание:</p>
+									<span>В клубе очень приятная дружеская атмосфера. Благодаря небольшому количеству участников (10–20 человек) и их молодому возрасту (20–35 лет) беседа протекает легко и непринужденно, что способствует преодолению языкового барьера.Тема каждой встречи известна заранее</span>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="lang">
+					<div class="lang__header js_lang_acardion">
+						<div class="lang__header_name">
+							<button class="btn__lang">
+								<i class="icn-minus"></i>
+								<i class="icn-plus"></i>
+							</button>
+							<span>Английский язык</span>
+						</div>
+						<div class="coach__wrap">
+							<div class="coach__item">
+								<p>от 1000 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 1200 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 800 руб/ч</p>
+							</div>
+						</div>
+					</div>
+					<div class="lang__wrap js_lang_item" >
+						<div class="lang__text"  style="background-color: #f5f8f9;">
+							<div class="programm">
+								<div class="programm__name">
+									<p>Тип программы:</p>
+									<span>разговорные клубы</span>
+								</div>
+								<div class="programm__name">
+									<p>Кол-во занятий:</p>
+									<span>2 раза в неделю по 90 мин, 8 занятий в месяц</span>
+								</div>
+								<div class="programm__name">
+									<p>Состав группы:</p>
+									<span>6-9 человек</span>
+								</div>
+								<div class="programm__name">
+									<p>Возраст аудитории:</p>
+									<span>школьники, студенты, взрослые</span>
+								</div>
+								<div class="programm__name">
+									<p>С уровнем знаний:</p>
+									<span>с нуля, начальный</span>
+								</div>
+								<div class="programm__name">
+									<p>Описание:</p>
+									<span>В клубе очень приятная дружеская атмосфера. Благодаря небольшому количеству участников (10–20 человек) и их молодому возрасту (20–35 лет) беседа протекает легко и непринужденно, что способствует преодолению языкового барьера.Тема каждой встречи известна заранее</span>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="lang">
+					<div class="lang__header js_lang_acardion is_active">
+						<div class="lang__header_name">
+							<button class="btn__lang">
+								<i class="icn-minus"></i>
+								<i class="icn-plus"></i>
+							</button>
+							<span>Английский язык</span>
+						</div>
+						<div class="coach__wrap">
+							<div class="coach__item">
+								<p>от 1000 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 1200 руб/ч</p>
+							</div>
+							<div class="coach__item">
+								<p>от 800 руб/ч</p>
+							</div>
+						</div>
+					</div>
+					<div class="lang__wrap js_lang_item" >
+						<div class="lang__text"  style="background-color: #f5f8f9;">
+							<div class="programm">
+								<div class="programm__name">
+									<p>Тип программы:</p>
+									<span>разговорные клубы</span>
+								</div>
+								<div class="programm__name">
+									<p>Кол-во занятий:</p>
+									<span>2 раза в неделю по 90 мин, 8 занятий в месяц</span>
+								</div>
+								<div class="programm__name">
+									<p>Состав группы:</p>
+									<span>6-9 человек</span>
+								</div>
+								<div class="programm__name">
+									<p>Возраст аудитории:</p>
+									<span>школьники, студенты, взрослые</span>
+								</div>
+								<div class="programm__name">
+									<p>С уровнем знаний:</p>
+									<span>с нуля, начальный</span>
+								</div>
+								<div class="programm__name">
+									<p>Описание:</p>
+									<span>В клубе очень приятная дружеская атмосфера. Благодаря небольшому количеству участников (10–20 человек) и их молодому возрасту (20–35 лет) беседа протекает легко и непринужденно, что способствует преодолению языкового барьера.Тема каждой встречи известна заранее</span>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+		<div class="border-container">
+			<div class="caption">
+				<h2 class="title__container">О нас</h2>
+			</div>
+		</div>
+		
+		<div class="border-container">
+			<div class="caption">
+				Здравствуйте, петербуржцы – школьники, студенты, взрослые...
+				<br>
+				Если Вам настоятельно необходимо подтянуть программу занятий, сдать важный экзамен, получить интересную работу, расширить разговорные навыки, то весь мой богатый опыт, актуальные личные наработки – для самых мотивированных и целеустремлённых. Работать будем вместе и – на результат!
+				<br>
+				Решение за Вами, а я отвечаю за Ваш выбор! Открываю набор учеников для подготовки к сдаче ОГЭ (ГИА) – 2016, а также подготовки к международным экзаменам.
+			</div>
+		</div>
+		<div class="border-container">
+			<div class="caption">
+				Здравствуйте, петербуржцы – школьники, студенты, взрослые...
+				<br>
+				Если Вам настоятельно необходимо подтянуть программу занятий, сдать важный экзамен, получить интересную работу, расширить разговорные навыки, то весь мой богатый опыт, актуальные личные наработки – для самых мотивированных и целеустремлённых. Работать будем вместе и – на результат!
+				<br>
+				Решение за Вами, а я отвечаю за Ваш выбор! Открываю набор учеников для подготовки к сдаче ОГЭ (ГИА) – 2016, а также подготовки к международным экзаменам.
+			</div>
+		</div>
 
-			<div class="company__header">
 
-				<div class="consult__logo">
+		<div class="experience">
+
+
+			<div class="experience__header">
+
+
+				<h3 class="title__slider">
+
+
+					Образование
+
+
+				</h3>
+
+
+			</div>
+
+
+			<div class="experience__top">
+
+
+				<p class="experience__date">1989-1993</p>
+
+
+				<p class="experience__text">
+
+
+					СПбГУ, факультет международных отношений, специальность – американистика.
+
+
+				</p>
+
+
+			</div>
+
+
+			<div class="experience__top">
+
+
+				<p class="experience__date">1993-1996</p>
+
+
+				<p class="experience__text">
+
+
+					Если Вам настоятельно необходимо подтянуть программу занятий, сдать важный экзамен, получить интересную работу, расширить разговорные навыки, то весь мой богатый опыт, актуальные личные наработки – для самых мотивированных и целеустремлённых. Работать будем вместе и – на результат!
+
+
+				</p>
+
+
+			</div>
+
+
+			<div class="experience__bottom">
+
+
+				<p class="experience__date">1989-1993</p>
+
+
+				<p class="experience__text">
+
+
+					СПбГУ, факультет международных отношений, специальность – американистика.
+
+
+				</p>
+
+
+			</div>
+
+
+		</div>
+
+
+		<div class="border-container js-nextSlider4" style="margin-top: 20px;">
+			<div class="caption">
+				<h3 class="title__light"> Фото и видео материалы</h3>
+				<div class="caption__btn">
+					<button class="slide-prev js-gallery__back"></button>
+					<button class="slide-next js-gallery__next"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="contant-container">
+			<div class="gallery">
+				<div class="gallery__item">
+					<img src="img/pic01.jpg" alt="Иллюстрация">
+				</div>
+				<div class="gallery__item">
+					<img src="img/pic01.jpg" alt="Иллюстрация">
+				</div>
+			
+				<div class="gallery__item">
+					<img src="img/pic01.jpg" alt="Иллюстрация">
+				</div>
+				<div class="gallery__item">
+					<img src="img/pic01.jpg" alt="Иллюстрация">
+				</div>
+			</div>
+			
+		</div>
+		<div class="border-container">
+			<div class="caption">
+				<h3 class="title__light">Отзывы
+					<span> (22)</span>
+				</h3>
+				<div class="caption__btn">
+					<button class="btn__blue">Оставить отзыв</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment">
+
+			<div class="comment__item">
+
+				<a href="#" class="comment__user">
 
 					<img src="img/user.jpg" alt="Иллюстрация">
 
-					<h3 class="title__name ">
+					<h3>Валентина</h3>
 
-						Максим <br>
+					<p>14 января 2015 18:03</p>
 
-						Александрович
+				</a>
 
-						<img src="img/check.png" alt="Иллюстрация">
+				<div class="comment__contant">
 
-						<br>
+					<div class="comment__text">
 
-						<img src="img/vip.png" alt="Иллюстрация">
+						<p>Очень хороший преподаватель. Мне было невероятно сложно начать говорить, а главное правильно употреблять времена. Всего за пару месяцев прогресс на лицо! Всем очень советую, невероятно добродушный человек и отличный преподаватель!
 
-					</h3>
+						</p>
 
-				</div>
+					</div>
 
-				<div class="rate">
+					<div class="comment__rate"></div>
 
-					<div class="vcenter">
+					<div class="dignity">
 
-						<div class="stars">
+						<div class="dignity__item">
 
-							<span class="star">
+							<div class="vcenter">
 
-								<span class="star_l active"></span>
+								<img src="img/dignity1.jpg" alt="Иллюстрация">
 
-								<span class="star_r active"></span>
+							</div>
 
-							</span>
-
-							<span class="star">
-
-								<span class="star_l active"></span>
-
-								<span class="star_r active"></span>
-
-							</span>
-
-							<span class="star">
-
-								<span class="star_l active"></span>
-
-								<span class="star_r active"></span>
-
-							</span>
-
-							<span class="star">
-
-								<span class="star_l active"></span>
-
-								<span class="star_r active"></span>
-
-							</span>
-
-							<span class="star">
-
-								<span class="star_l active"></span>
-
-								<span class="star_r active"></span>
-
-							</span>
+							<p>Пунктуальность</p>
 
 						</div>
 
-						<br>
+						<div class="dignity__item">
 
-						<p>Отзывов: <strong>23</strong></p>
+							<div class="vcenter">
 
-					</div>
+								<img src="img/dignity2.jpg" alt="Иллюстрация">
 
-				</div>
+							</div>
 
-				<div class="experience">
+							<p>Пунктуальность</p>
 
-					<div class="vcenter">
+						</div>
 
-						<p>Стаж: <strong>11 лет</strong></p>
+						<div class="dignity__item">
 
-					</div>
+							<div class="vcenter">
 
-				</div>
+								<img src="img/dignity3.jpg" alt="Иллюстрация">
 
-		
+							</div>
 
-				<div class="company__cost">
+							<p>Пунктуальность</p>
 
-					<div class="vcenter">
+						</div>
 
-						<p>от <strong>25000</strong> тг/мес</p>
+						<div class="dignity__item">
 
-					</div>
+							<div class="vcenter">
 
-				</div>
+								<img src="img/dignity4.jpg" alt="Иллюстрация">
 
-				<a href="#" class="icon-heart"></a>
+							</div>
 
-			</div>
-
-			<div class="company__contant">
-
-				<div class="company__text">
-
-					<p>
-
-						Английский язык – все уровни: подготовка к IELTS, TOEFL, ЕНТ, английский для детей и подростков. Наши ученики выигрывают олимпиады и гранты в самые престижные университеты мира. Занятия проводятся индивидуально и в группе (два или три раза в неделю по 90 минут).
-
-					</p>
-
-				</div>
-
-				<div class="company__box">
-
-					<div class="vcenter">
-
-						<div class="company__box_item">
-
-							<img src="img/pic01.jpg" alt="Иллюстрация">
-
-							<img src="img/pic02.jpg" alt="Иллюстрация">
-
-							<img src="img/pic03.jpg" alt="Иллюстрация">
-
-							<img src="img/pic04.jpg" alt="Иллюстрация">
-
-							<br>
-
-							<img src="img/pic05.jpg" alt="Иллюстрация">
-
-							<img src="img/pic06.jpg" alt="Иллюстрация">
-
-							<img src="img/pic07.jpg" alt="Иллюстрация">
+							<p>Пунктуальность</p>
 
 						</div>
 
@@ -327,747 +562,534 @@
 
 			</div>
 
-			<div class="company__footer">
+			
 
-				<div class="company__contact">
+			<div class="comment__item">
 
-					<a href="tel:+77071234567" class="telephone__link">
+				<a href="#" class="comment__user">
 
-						<i class="icon-tel"></i>
+					<img src="img/user.jpg" alt="Иллюстрация">
 
-						+7 707 <p>xxx xx xx</p>
+					<h3>Валентина</h3>
 
-					</a>
+					<p>14 января 2015 18:03</p>
 
-					<a href="tel:+77071234567" class="telephone__link">
+				</a>
 
-						+7 707 <p>xxx xx xx</p>
+				<div class="comment__contant">
 
-					</a>
+					<div class="comment__text">
 
-					<button class="btn__telephone">показать номера</button>
+						<p>Очень хороший преподаватель. Мне было невероятно сложно начать говорить, а главное правильно употреблять времена. Всего за пару месяцев прогресс на лицо! Всем очень советую, невероятно добродушный человек и отличный преподаватель!
 
-				</div>
+						</p>
 
-				<div class="company__locate">
+					</div>
 
-					<p class="locate">
+					<div class="comment__rate"></div>
 
-						<i class="icon-locate-blue"></i>
+					<div class="dignity">
 
-						Казахстан, Алматы, м. Улица
+						<div class="dignity__item">
 
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
+							<div class="vcenter">
 
-					</p>
+								<img src="img/dignity1.jpg" alt="Иллюстрация">
 
-				</div>
+							</div>
 
-				<div class="company__site">
+							<p>Пунктуальность</p>
 
-					<a href="www.elka.kz">
+						</div>
 
-						<i class="icon-planet"></i>
+						<div class="dignity__item">
 
-						www.elka.kz
+							<div class="vcenter">
 
-					</a>
+								<img src="img/dignity2.jpg" alt="Иллюстрация">
 
-					<a href="mailto:info@elka.kz">
+							</div>
 
-						<i class="icon-mail"></i>
+							<p>Пунктуальность</p>
 
-						info@elka.kz
+						</div>
 
-					</a>
+						<div class="dignity__item">
+
+							<div class="vcenter">
+
+								<img src="img/dignity3.jpg" alt="Иллюстрация">
+
+							</div>
+
+							<p>Пунктуальность</p>
+
+						</div>
+
+						<div class="dignity__item">
+
+							<div class="vcenter">
+
+								<img src="img/dignity4.jpg" alt="Иллюстрация">
+
+							</div>
+
+							<p>Пунктуальность</p>
+
+						</div>
+
+					</div>
 
 				</div>
 
 			</div>
 
-		</div>
-		<div class="company">
-			<div class="company__header">
-				<div class="consult__logo">
-					<img src="img/pic06.jpg" alt="Иллюстрация">
-					<h3 class="title__name ">
-						Федор <br>
-						Достоевский
-					</h3>
-				</div>
-				<div class="rate">
-					<div class="vcenter">
-						<div class="stars">
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-						</div>
-						<br>
-						<p>Отзывов: <strong>23</strong></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div class="vcenter">
-						<p>Стаж: <strong>110 лет</strong></p>
-					</div>
-				</div>
-		
-				<div class="company__cost">
-					<div class="vcenter">
-						<p>от <strong>11000</strong> тг/мес</p>
-					</div>
-				</div>
-				<a href="#" class="icon-heart"></a>
-			</div>
-			<div class="company__contant">
-				<div class="company__text">
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							ОГЭ (ГИА), ЕГЭ, CAE, FCE, IELTS, KET, PET, TOEFL
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-						школьники 3-11 классов, студенты, взрослые
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							с нуля, начальный, средний, продвинутый
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							Московский педагогический государственный
-							<br>
-							университет - 1974 год
-						</div>
-					</div>
-					
-				</div>
-				<div class="company__box">
-					<div class="vcenter">
-						<div class="company__box_item">
-							<p class="locate">
-								<i class="icon-locate-blue"></i>
-								Казахстан, Алматы, м. Улица
-								<br>
-								Академика Янгеля 22
-								<br>
-								<a href="#">2 филиала</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="company__footer">
-				<div class="company__contact">
-					<a href="tel:+77071234567" class="telephone__link">
-						<i class="icon-tel"></i>
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<a href="tel:+77071234567" class="telephone__link">
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<button class="btn__telephone">показать номера</button>
-				</div>
-				<div class="company__locate">
-					<p class="locate">
-						<i class="icon-locate-blue"></i>
-						Казахстан, Алматы, м. Улица
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
-					</p>
-				</div>
-				<div class="company__site">
-					<a href="www.elka.kz">
-						<i class="icon-planet"></i>
-						www.elka.kz
-					</a>
-					<a href="mailto:info@elka.kz">
-						<i class="icon-mail"></i>
-						info@elka.kz
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="company">
-			<div class="company__header">
-				<div class="consult__logo">
-					<img src="img/pic06.jpg" alt="Иллюстрация">
-					<h3 class="title__name ">
-						Федор <br>
-						Достоевский
-					</h3>
-				</div>
-				<div class="rate">
-					<div class="vcenter">
-						<div class="stars">
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-						</div>
-						<br>
-						<p>Отзывов: <strong>23</strong></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div class="vcenter">
-						<p>Стаж: <strong>110 лет</strong></p>
-					</div>
-				</div>
-		
-				<div class="company__cost">
-					<div class="vcenter">
-						<p>от <strong>11000</strong> тг/мес</p>
-					</div>
-				</div>
-				<a href="#" class="icon-heart"></a>
-			</div>
-			<div class="company__contant">
-				<div class="company__text">
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							ОГЭ (ГИА), ЕГЭ, CAE, FCE, IELTS, KET, PET, TOEFL
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-						школьники 3-11 классов, студенты, взрослые
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							с нуля, начальный, средний, продвинутый
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							Московский педагогический государственный
-							<br>
-							университет - 1974 год
-						</div>
-					</div>
-					
-				</div>
-				<div class="company__box">
-					<div class="vcenter">
-						<div class="company__box_item">
-							<p class="locate">
-								<i class="icon-locate-blue"></i>
-								Казахстан, Алматы, м. Улица
-								<br>
-								Академика Янгеля 22
-								<br>
-								<a href="#">2 филиала</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="company__footer">
-				<div class="company__contact">
-					<a href="tel:+77071234567" class="telephone__link">
-						<i class="icon-tel"></i>
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<a href="tel:+77071234567" class="telephone__link">
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<button class="btn__telephone">показать номера</button>
-				</div>
-				<div class="company__locate">
-					<p class="locate">
-						<i class="icon-locate-blue"></i>
-						Казахстан, Алматы, м. Улица
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
-					</p>
-				</div>
-				<div class="company__site">
-					<a href="www.elka.kz">
-						<i class="icon-planet"></i>
-						www.elka.kz
-					</a>
-					<a href="mailto:info@elka.kz">
-						<i class="icon-mail"></i>
-						info@elka.kz
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="company">
-			<div class="company__header">
-				<div class="consult__logo">
-					<img src="img/pic06.jpg" alt="Иллюстрация">
-					<h3 class="title__name ">
-						Федор <br>
-						Достоевский
-					</h3>
-				</div>
-				<div class="rate">
-					<div class="vcenter">
-						<div class="stars">
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-						</div>
-						<br>
-						<p>Отзывов: <strong>23</strong></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div class="vcenter">
-						<p>Стаж: <strong>110 лет</strong></p>
-					</div>
-				</div>
-		
-				<div class="company__cost">
-					<div class="vcenter">
-						<p>от <strong>11000</strong> тг/мес</p>
-					</div>
-				</div>
-				<a href="#" class="icon-heart"></a>
-			</div>
-			<div class="company__contant">
-				<div class="company__text">
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							ОГЭ (ГИА), ЕГЭ, CAE, FCE, IELTS, KET, PET, TOEFL
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-						школьники 3-11 классов, студенты, взрослые
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							с нуля, начальный, средний, продвинутый
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							Московский педагогический государственный
-							<br>
-							университет - 1974 год
-						</div>
-					</div>
-					
-				</div>
-				<div class="company__box">
-					<div class="vcenter">
-						<div class="company__box_item">
-							<p class="locate">
-								<i class="icon-locate-blue"></i>
-								Казахстан, Алматы, м. Улица
-								<br>
-								Академика Янгеля 22
-								<br>
-								<a href="#">2 филиала</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="company__footer">
-				<div class="company__contact">
-					<a href="tel:+77071234567" class="telephone__link">
-						<i class="icon-tel"></i>
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<a href="tel:+77071234567" class="telephone__link">
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<button class="btn__telephone">показать номера</button>
-				</div>
-				<div class="company__locate">
-					<p class="locate">
-						<i class="icon-locate-blue"></i>
-						Казахстан, Алматы, м. Улица
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
-					</p>
-				</div>
-				<div class="company__site">
-					<a href="www.elka.kz">
-						<i class="icon-planet"></i>
-						www.elka.kz
-					</a>
-					<a href="mailto:info@elka.kz">
-						<i class="icon-mail"></i>
-						info@elka.kz
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="company">
-			<div class="company__header">
-				<div class="consult__logo">
-					<img src="img/pic06.jpg" alt="Иллюстрация">
-					<h3 class="title__name ">
-						Федор <br>
-						Достоевский
-					</h3>
-				</div>
-				<div class="rate">
-					<div class="vcenter">
-						<div class="stars">
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-						</div>
-						<br>
-						<p>Отзывов: <strong>23</strong></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div class="vcenter">
-						<p>Стаж: <strong>110 лет</strong></p>
-					</div>
-				</div>
-		
-				<div class="company__cost">
-					<div class="vcenter">
-						<p>от <strong>11000</strong> тг/мес</p>
-					</div>
-				</div>
-				<a href="#" class="icon-heart"></a>
-			</div>
-			<div class="company__contant">
-				<div class="company__text">
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							ОГЭ (ГИА), ЕГЭ, CAE, FCE, IELTS, KET, PET, TOEFL
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-						школьники 3-11 классов, студенты, взрослые
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							с нуля, начальный, средний, продвинутый
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							Московский педагогический государственный
-							<br>
-							университет - 1974 год
-						</div>
-					</div>
-					
-				</div>
-				<div class="company__box">
-					<div class="vcenter">
-						<div class="company__box_item">
-							<p class="locate">
-								<i class="icon-locate-blue"></i>
-								Казахстан, Алматы, м. Улица
-								<br>
-								Академика Янгеля 22
-								<br>
-								<a href="#">2 филиала</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="company__footer">
-				<div class="company__contact">
-					<a href="tel:+77071234567" class="telephone__link">
-						<i class="icon-tel"></i>
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<a href="tel:+77071234567" class="telephone__link">
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<button class="btn__telephone">показать номера</button>
-				</div>
-				<div class="company__locate">
-					<p class="locate">
-						<i class="icon-locate-blue"></i>
-						Казахстан, Алматы, м. Улица
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
-					</p>
-				</div>
-				<div class="company__site">
-					<a href="www.elka.kz">
-						<i class="icon-planet"></i>
-						www.elka.kz
-					</a>
-					<a href="mailto:info@elka.kz">
-						<i class="icon-mail"></i>
-						info@elka.kz
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="company">
-			<div class="company__header">
-				<div class="consult__logo">
-					<img src="img/pic06.jpg" alt="Иллюстрация">
-					<h3 class="title__name ">
-						Федор <br>
-						Достоевский
-					</h3>
-				</div>
-				<div class="rate">
-					<div class="vcenter">
-						<div class="stars">
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-							<span class="star">
-								<span class="star_l active"></span>
-								<span class="star_r active"></span>
-							</span>
-						</div>
-						<br>
-						<p>Отзывов: <strong>23</strong></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div class="vcenter">
-						<p>Стаж: <strong>110 лет</strong></p>
-					</div>
-				</div>
-		
-				<div class="company__cost">
-					<div class="vcenter">
-						<p>от <strong>11000</strong> тг/мес</p>
-					</div>
-				</div>
-				<a href="#" class="icon-heart"></a>
-			</div>
-			<div class="company__contant">
-				<div class="company__text">
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							ОГЭ (ГИА), ЕГЭ, CAE, FCE, IELTS, KET, PET, TOEFL
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-						школьники 3-11 классов, студенты, взрослые
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							с нуля, начальный, средний, продвинутый
-						</div>
-					</div>
-					<div class="profesional">
-						<div class="profesional__item">
-							Английский язык:
-						</div>
-						<div class="profesional__text">
-							Московский педагогический государственный
-							<br>
-							университет - 1974 год
-						</div>
-					</div>
-					
-				</div>
-				<div class="company__box">
-					<div class="vcenter">
-						<div class="company__box_item">
-							<p class="locate">
-								<i class="icon-locate-blue"></i>
-								Казахстан, Алматы, м. Улица
-								<br>
-								Академика Янгеля 22
-								<br>
-								<a href="#">2 филиала</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="company__footer">
-				<div class="company__contact">
-					<a href="tel:+77071234567" class="telephone__link">
-						<i class="icon-tel"></i>
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<a href="tel:+77071234567" class="telephone__link">
-						+7 707 <p>xxx xx xx</p>
-					</a>
-					<button class="btn__telephone">показать номера</button>
-				</div>
-				<div class="company__locate">
-					<p class="locate">
-						<i class="icon-locate-blue"></i>
-						Казахстан, Алматы, м. Улица
-						Академика Янгеля 22 + <a href="#">2 филиала</a>
-					</p>
-				</div>
-				<div class="company__site">
-					<a href="www.elka.kz">
-						<i class="icon-planet"></i>
-						www.elka.kz
-					</a>
-					<a href="mailto:info@elka.kz">
-						<i class="icon-mail"></i>
-						info@elka.kz
-					</a>
-				</div>
-			</div>
-		</div>
+			
 
-
-
-		<div class="clear"></div>
-		<div class="more">
 			<button class="btn__blue">Показать еще (20)</button>
+
+		</div>
+
+		<div class="study">
+
+			<h2 class="title__regular">Учились на курсах этой компании?</h2>
+
+			<p>Оставьте отзыв, заполнив форму ниже</p>
+
+			<form action="" class="inervision">
+
+				<div class="inervision__slides">
+
+					<div class="inervision__item get__left">
+
+						<div class="slid">
+
+							<p>Пунктуальность</p>
+
+							<div class="ui-slider js-ui-slider js-ui-slider-main">
+
+							</div>
+
+						</div>
+
+						<div class="slid green">
+
+							<p>Ответственность</p>
+
+							<div class="ui-slider js-ui-slider js-ui-slider-main">
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="inervision__item get__right">
+
+						<div class="slid violet">
+
+							<p>Пунктуальность</p>
+
+							<div class="ui-slider js-ui-slider js-ui-slider-main">
+
+							</div>
+
+						</div>
+
+						<div class="slid yellow">
+
+							<p>Ответственность</p>
+
+							<div class="ui-slider js-ui-slider js-ui-slider-main">
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+		
+
+				<textarea placeholder="Начните писать отзыв здесь..."></textarea>
+
+				<button class="btn__blue_bg">Опубликовать</button>
+
+			</form>
+
+		</div>
+
+		
+
+		<div class="border-container">
+			<div class="caption">
+				<h3 class="title__light">Акции</h3>
+				<div class="caption__btn">
+					<button class="slide-prev js-sale__back"></button>
+					<button class="slide-next js-sale__next"></button>
+				</div>
+			</div>
+		</div>
+		<div class="contant-container">
+			<div class="sale">
+				<a href="#" class="sale__item">
+					<div class="sale__img">
+						<img src="img/sale1.jpg" alt="Иллюстрация">
+						<div class="sale__procent">
+							<img src="img/sale-procent.png" alt="Иллюстрация">
+							<span>25%</span>
+						</div>
+					</div>
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<p>
+							Начни изучать английский язык вместе с Almaty Lingua Franca Union! Мы предлагаем квалифицированное и продуманное обучение, а не пестрые неосуществимые заголовки "Выучить
+						</p>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__term">
+							<p>
+								Акция действует:
+								<strong>23 апр 2015 - 25 мая 2016</strong>
+							</p>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__img">
+						<img src="img/sale1.jpg" alt="Иллюстрация">
+						<div class="sale__procent">
+							<img src="img/sale-procent.png" alt="Иллюстрация">
+							<span>25%</span>
+						</div>
+					</div>
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<p>
+							Начни изучать английский язык вместе с Almaty Lingua Franca Union! Мы предлагаем квалифицированное и продуманное обучение, а не пестрые неосуществимые заголовки "Выучить
+						</p>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__term">
+							<p>
+								Акция действует:
+								<strong>23 апр 2015 - 25 мая 2016</strong>
+							</p>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__img">
+						<img src="img/sale1.jpg" alt="Иллюстрация">
+						<div class="sale__procent">
+							<img src="img/sale-procent.png" alt="Иллюстрация">
+							<span>25%</span>
+						</div>
+					</div>
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<p>
+							Начни изучать английский язык вместе с Almaty Lingua Franca Union! Мы предлагаем квалифицированное и продуманное обучение, а не пестрые неосуществимые заголовки "Выучить
+						</p>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__term">
+							<p>
+								Акция действует:
+								<strong>23 апр 2015 - 25 мая 2016</strong>
+							</p>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__img">
+						<img src="img/sale1.jpg" alt="Иллюстрация">
+						<div class="sale__procent">
+							<img src="img/sale-procent.png" alt="Иллюстрация">
+							<span>25%</span>
+						</div>
+					</div>
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<p>
+							Начни изучать английский язык вместе с Almaty Lingua Franca Union! Мы предлагаем квалифицированное и продуманное обучение, а не пестрые неосуществимые заголовки "Выучить
+						</p>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__term">
+							<p>
+								Акция действует:
+								<strong>23 апр 2015 - 25 мая 2016</strong>
+							</p>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__img">
+						<img src="img/sale1.jpg" alt="Иллюстрация">
+						<div class="sale__procent">
+							<img src="img/sale-procent.png" alt="Иллюстрация">
+							<span>25%</span>
+						</div>
+					</div>
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<p>
+							Начни изучать английский язык вместе с Almaty Lingua Franca Union! Мы предлагаем квалифицированное и продуманное обучение, а не пестрые неосуществимые заголовки "Выучить
+						</p>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__term">
+							<p>
+								Акция действует:
+								<strong>23 апр 2015 - 25 мая 2016</strong>
+							</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+
+		<div class="border-container">
+			<div class="caption">
+				<h3 class="title__light"> Вакансии</h3>
+				<div class="caption__btn">
+					<button class="slide-prev js-vacancy__back"></button>
+					<button class="slide-next js-vacancy__next"></button>
+				</div>
+			</div>
+		</div>
+		<div class="contant-container">
+			<div class="sale">
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+				<a href="#" class="sale__item">
+					<div class="sale__text">
+						<h3 class="title__side">Скидка на курсы маникюра 25%
+						</h3>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+						<div class="vacancy__text">
+							<p>Требуемый опыт работы</p>
+							<strong>1–3 года</strong>
+						</div>
+					</div>
+					<div class="sale__footer">
+						<div class="sale__info">
+							<div class="vcenter">
+								<strong>250 000тг</strong>
+							</div>
+						</div>
+						<div class="sale__term">
+							<p>
+								Киев, Дорогожичи
+							</p>
+						</div>
+					</div>
+				
+				</a>
+			</div>
+			
 		</div>
 	</main>
 	<!-- end MAIN -->
-	<div class="side get__right">
-		<img  class="flash"src="img/flash.jpg" alt="Иллюстрация">
-	</div>
-	<div class="clear"></div>
 
-	//=include partials/footer.html
+	<aside class="side get__right">
+		<h2 class="title__side">Популярные курсы</h2>
+		<div class="training">
+			<div class="training__item">
+				<img src="img/center1.png" alt="Иллюстрация">
+				<div class="training__center">
+					<h4 class="title__training vip__small">Бухгалтерский центр ZHAE</h4>
+					<div class="training__wrap">
+						<h3>Деловой английский</h3>
+						<p> от <strong>25000</strong> тг/занятие</p>
+					</div>
+				</div>
+			</div>
+			<div class="training__item">
+				<img src="img/center2.png" alt="Иллюстрация">
+				<div class="training__center">
+					<h4 class="title__training vip__small">Бухгалтерский центр ZHAE</h4>
+					<div class="training__wrap">
+						<h3>Деловой английский</h3>
+						<p> от <strong>25000</strong> тг/занятие</p>
+					</div>
+				</div>
+			</div>
+			<div class="training__item">
+				<img src="img/center3.png" alt="Иллюстрация">
+				<div class="training__center">
+					<h4 class="title__training vip__small">Бухгалтерский центр ZHAE</h4>
+					<div class="training__wrap">
+						<h3>Деловой английский</h3>
+						<p> от <strong>25000</strong> тг/занятие</p>
+					</div>
+				</div>
+			</div>
+			<div class="training__item">
+				<img src="img/center2.png" alt="Иллюстрация">
+				<div class="training__center">
+					<h4 class="title__training vip__small">Бухгалтерский центр ZHAE</h4>
+					<div class="training__wrap">
+						<h3>Деловой английский</h3>
+						<p> от <strong>25000</strong> тг/занятие</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<a href="#" class="training__more">
+			<span>смотреть все (30)</span>
+		</a>
+		<img  class="flash"src="img/flash.jpg" alt="Иллюстрация">
+	</aside>
+
 
 </div>
 <!--END out-->
+
 </body>
 </html>
