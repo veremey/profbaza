@@ -2,13 +2,15 @@
 .experience
 	background-color: #FFF
 	padding: 0 35px 20px
+	border-bottom: 1px solid $body
 	+clr
 	&__header
 		padding-top: 35px
-	&__top
+	&__line
 		border-left: 1px solid #C0C4C7
 		position: relative
 		padding-left: 15px
+		padding-bottom: 40px
 		&::after
 			content: ""
 			position: absolute
@@ -29,9 +31,14 @@
 		font-size: 14px
 		+osl
 	&__text
-		padding-bottom: 40px
+		padding-bottom: 10px
+	strong
+		text-transform: uppercase
+		font-size: 14px
+		+osb
 	&__bottom
 		padding-left: 20px
+		padding-bottom: 40px
 		position: relative
 		&::after
 			content: ""

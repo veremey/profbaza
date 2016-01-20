@@ -44,6 +44,9 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .content { width: -webkit-calc(100% - 720px); width: calc(100% - 720px); margin-left: 20px; *zoom: 1; }
 .content:after { content: " "; display: table; clear: both; }
 
+.content__big { width: -webkit-calc(100% - 360px); width: calc(100% - 360px); *zoom: 1; }
+.content__big:after { content: " "; display: table; clear: both; }
+
 .container { width: -webkit-calc(100% - 620px); width: calc(100% - 620px); margin-left: 20px; *zoom: 1; }
 .container:after { content: " "; display: table; clear: both; }
 
@@ -305,7 +308,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .sale__container .sale__info { width: 120px; }
 .sale__container .sale__info img { width: 45px; }
 .sale__container .sale__term { padding: 40px 25px; }
-.sale__item { display: block; margin: 0 10px 20px; background-color: #fff; *zoom: 1; -webkit-transition: 0.3s; transition: 0.3s; }
+.sale__item { display: block; margin: 2px 10px 20px; background-color: #fff; *zoom: 1; -webkit-transition: 0.3s; transition: 0.3s; }
 .sale__item:after { content: " "; display: table; clear: both; }
 .sale__item:hover { -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
 .sale__img { position: relative; min-height: 185px; *zoom: 1; }
@@ -405,14 +408,15 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .profesional__item { color: #9ba1a5; float: left; width: 28%; }
 .profesional__text { color: #9ba1a5; float: right; width: 70%; }
 
-.experience { background-color: #FFF; padding: 0 35px 20px; *zoom: 1; }
+.experience { background-color: #FFF; padding: 0 35px 20px; border-bottom: 1px solid #f5f8f9; *zoom: 1; }
 .experience:after { content: " "; display: table; clear: both; }
 .experience__header { padding-top: 35px; }
-.experience__top { border-left: 1px solid #C0C4C7; position: relative; padding-left: 15px; }
-.experience__top::after { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #fff; border: 1px solid #9ba1a5; }
+.experience__line { border-left: 1px solid #C0C4C7; position: relative; padding-left: 15px; padding-bottom: 40px; }
+.experience__line::after { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #fff; border: 1px solid #9ba1a5; }
 .experience__date { position: relative; top: 5px; line-height: 0; color: #9ba1a5; margin-bottom: 25px; font-size: 14px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
-.experience__text { padding-bottom: 40px; }
-.experience__bottom { padding-left: 20px; position: relative; }
+.experience__text { padding-bottom: 10px; }
+.experience strong { text-transform: uppercase; font-size: 14px; font-family: "Open Sans", Arial, sans-serif; font-weight: 700; }
+.experience__bottom { padding-left: 20px; padding-bottom: 40px; position: relative; }
 .experience__bottom::after { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #fff; border: 1px solid #9ba1a5; }
 
 .ui-slider { position: relative; width: 190px; float: right; margin-top: 10px; }
@@ -533,7 +537,7 @@ button { background-color: transparent; cursor: pointer; }
 .vip__big { position: relative; display: inline; }
 .vip__big:after { content: "vip"; position: absolute; top: 10px; right: -40px; text-align: center; background-color: #cd7fe2; color: #fff; text-transform: uppercase; font-size: 11px; padding: 2px 5px; -webkit-border-radius: 4px; border-radius: 4px; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 800; }
 
-.flash { width: 100%; height: auto; max-width: 100%; }
+.flash { width: 100%; height: auto; max-width: 100%; margin-top: 20px; }
 
 .more { clear: both; margin: 80px auto 160px; }
 .more .btn__blue { height: 55px; margin: 0 auto; display: block; width: 290px; padding: 0; text-align: center; }
