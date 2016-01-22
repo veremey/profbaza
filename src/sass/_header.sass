@@ -13,19 +13,36 @@
 		&:hover
 			opacity: 0.7
 			cursor: pointer
+		+r(1300)
+			width: 230px
+		+r(640)
+			padding-bottom: 0
+			border: none
+			width: auto
 		h1
 			color: $black
 			font-size: 30px
 			line-height: 33px
 			margin-top: 17px
 			+play
+			+r(640)
+				line-height: 80px
+				margin-top: 0
 		p
 			font-size: 12px
 			color: $gray
 			+osl
+			+r(640)
+				display: none
 	&__menu
 		float: left
 		margin-left: 18%
+		+r(1550)
+			margin-left: 100px
+		+r(1400)
+			margin-left: 20px
+		+r(1050)
+			display: none
 		li
 			display: inline-block
 			&.is_active
@@ -41,6 +58,12 @@
 		float: right
 		width: 340px
 		+clr
+		+r(1180)
+			width: 220px
+		+r(1050)
+			width: 260px
+		+r(640)
+			width: auto
 .profile
 	float: left
 	width: 235px
@@ -48,6 +71,12 @@
 	border: 1px solid $body
 	border-top: 0
 	border-bottom: 0
+	+r(1180)
+		width: 140px
+	+r(1050)
+		border: none
+	+r(640)
+		display: none
 	a
 		float: left
 		position: relative
@@ -63,10 +92,93 @@
 	&:hover
 		cursor: pointer
 		opacity: 0.7
+	+r(1180)
+		width: 80px
+	+r(1050)
+		float: left
+	+r(640)
+		float: right
+		margin-right: 15px
+		height: 80px
 	img
 		width: 60px
 		height: 60px
 		+vcenter
 		-webkit-border-radius: 100%
 		border-radius: 100%
+	&__notification
+		position: relative
+		float: right
+		width: 26px
+		height: 26px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		background-color: $green
+		top: 10px
+		right: 10px
+		span
+			+vcenter
+			color: #FFF
+			+os
+.menu__small
+	display: none
+	+r(1050)
+		display: block
+		float: right
+		width: 40px
+		height: 100px
+	+r(640)
+		height: 80px
+	&:hover
+		.butter
+			float: left
+			&:before,
+			&:after
+				left: auto
+				right: -10px
+	.butter
+		width: 30px
+		height: 4px
+		margin-top: 45px
+		position: relative
+		float: right
+		background-color: #000
+		+tr(.5s)
+		+r(640)
+			margin-top: 35px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 10px
+			left: -10px
+			width: 30px
+			height: 4px
+			background-color: #000
+		&:after
+			top: auto
+			bottom: 10px
 
+.butter__menu
+	display: none
+	top: 0
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: $blue
+	padding: 2%
+	z-index: 1000
+	a
+		display: block
+		position: relative
+		height: 70px
+		&:hover
+			background-color: #1DA2D8
+	span
+		+vcenter
+		font-size: 20px
+		color: #fff
+	&_logo
+		span
+			font-size: 40px
+			+play

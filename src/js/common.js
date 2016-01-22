@@ -5,6 +5,14 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// открыть окно меню
+	$('.menu__small').on('click', function() {
+		$('.butter__menu').slideDown('300');
+	});
+	// закрыть окно меню
+		$('.btn-close').on('click', function() {
+			$('.butter__menu').slideUp('300');
+		});
 
 	//Читать больше
 	$('.programm__name span').readmore({

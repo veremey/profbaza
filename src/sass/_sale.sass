@@ -7,15 +7,30 @@
 		.sale__item
 			width: 32%
 			float: left
-			margin: 0 2% 0 0
-			&:last-child
+			margin: 0 2% 20px 0
+			&:nth-child(3n)
 				margin-right: 0
+			+r(1500)
+				width: 48%
+				&:nth-child(3n)
+					margin-right: 2%
+				&:nth-child(2n)
+					margin-right: 0
+			+r(885)
+				width: 100%
+				margin-right: 0 !important
+			strong
+				+r(1820)
+					display: block
+					margin-left: 0
 		.sale__info
 			width: 120px
 			img
 				width: 45px
 		.sale__term
 			padding: 40px 25px
+			+r(1820)
+				padding: 25px
 
 	&__item
 		display: block
