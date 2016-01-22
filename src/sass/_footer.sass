@@ -1,1 +1,117 @@
-// Normally mainpage styles
+// Normally footer styles
+.footer
+	display: table
+	width: 100%
+	table-layout: fixed
+	border-top: 1px solid #e4e7e9
+	+clr
+	+r(1020)
+		display: block
+	&__box
+		display: table-cell
+		vertical-align: top
+		border-right: 1px solid #e4e7e9
+		&:first-child
+			padding: 0
+			+r(1020)
+				border-right: 1px solid #e4e7e9
+		+r(1540)
+			width: 305px
+		+r(1260)
+			width: 250px
+		+r(1020)
+			display: block
+			width: 50%
+			float: left
+			border-right: none
+		+r(760)
+			width: 100%
+
+.copy
+	position: relative
+	height: 135px
+	border-bottom: 1px solid #e4e7e9
+	p
+		position: absolute
+		top: 50%
+		+try(-50%)
+		left: 50px
+
+.socio
+	position: relative
+	height: 135px
+	border-bottom: 1px solid #e4e7e9
+	&__wrap
+		position: absolute
+		width: 70%
+		left: 50px
+		top: 50%
+		+try(-50%)
+		+justify
+		+r(760)
+			width: 85%
+	a
+		display: inline-block
+		&:hover
+			+gray-half
+		&:active
+			opacity: 0.7
+
+.contact__us
+	padding: 60px 0 30px 50px
+	p
+		color: $gray
+		font-size: 16px
+		margin-bottom: 15px
+	a
+		display: inline-block
+		color: $gray
+		font-size: 16px
+		+tr(.3s)
+		&:hover
+			color: $black
+
+.benefit
+	padding: 40px 30px
+	&__list
+		margin-top: 30px
+	.read__more
+		position: relative
+		padding-left: 40px
+		color: $blue
+		&:hover
+			color: $black
+		.icon-bottom,
+		.icon-top
+			position: absolute
+			top: -2px
+			left: 0
+		.icon-top
+			top: -5px
+	h3
+		font-size: 18px
+		+osb
+	li
+		margin-bottom: 40px
+	a
+		position: relative
+		display: inline-block
+		font-size: 18px
+		color: $black
+		+tr(.3s)
+		&:hover
+			color: $blue
+	.slide-next
+		display: none
+		+rotate(90)
+		+r(1020)
+			position: absolute
+			top: -2px
+			right: -50px
+			display: inline-block
+	&.action
+		+r(760)
+			display: inline-block
+	.accord
+		margin-left: 0
+		margin-top: 20px

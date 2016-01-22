@@ -11,9 +11,34 @@ $(document).ready(function() {
 		speed: 75,
 		collapsedHeight: 200,
 		embedCSS: false,
-		moreLink: '<a class="read__more" href="#"><span>Читать полностью </span></a',
+		moreLink: '<a class="read__more" href="#"><span>Читать полностью </span></a>',
 		lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span></a>'
 	});
+	// больше Курсов
+	$('.js-more_course').readmore({
+		speed: 75,
+		collapsedHeight: 310,
+		embedCSS: false,
+		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все курсы </span></a>',
+		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
+	});
+	//Больше репетиторов
+	$('.js-more_teacher').readmore({
+		speed: 75,
+		collapsedHeight: 260,
+		embedCSS: false,
+		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все репетиторы </span></a>',
+		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
+	});
+
+
+
+	// footer > 760
+	if($(document).width() <= 1020){
+		$('.benefit').addClass('action');
+		$('.benefit__list').addClass('accord');
+	};
+
 
 	//accordion
 	$('.action').on('mouseenter', function() {
@@ -27,6 +52,7 @@ $(document).ready(function() {
 		$(this).toggleClass('is_active');
 		return false;
 	});
+
 
 
 	/* Скрипт для рейтинга */
