@@ -9,22 +9,35 @@
 		position: relative
 		border-bottom: 1px solid $body
 		+clr
+		+r(1270)
+			display: block
 	&__logo,
 	&__feedback
 		display: table-cell
 		position: relative
 		width: 30%
-		white-space: nowrap
+		// white-space: nowrap
+		+r(1270)
+			display: block
+			width: 100%
+			+clr
 	&__logo
 		border-right: 1px solid $body
 		padding: 25px 20px
-		white-space: nowrap
+		// white-space: nowrap
+		+r(1500)
+			width: 40%
+		+r(1270)
+			display: block
+			width: 100%
 		> img
-			float: left
+			position: absolute
+			top: 25px
+			left: 20px
 			width: 45px
 			vertical-align: top
 		.title__name
-			padding-left: 10px
+			padding-left: 53px
 			float: left
 			img
 				display: inline-block
@@ -35,10 +48,37 @@
 		border-right: 1px solid $body
 		vertical-align: top
 		+clr
+		+r(1500)
+			width: 20%
+		+r(1270)
+			border-top: 1px solid $body
+		.vcenter
+			white-space: nowrap
+			+r(1500)
+				white-space: normal
+				width: 90%
+				height: 50%
+				top: 40%
+			+r(1270)
+				position: relative
+				width: auto
+				top: 0
+				left: 0
+				padding-left: 20px
+				transform: translate(0, 0)
+				+clr
+		.stars
+			+r(1500)
+				margin-bottom: 30px
 		p
 			color: $gray
 			float: left
 			margin-left: 95px
+			+r(1500)
+				margin-left: 0
+			+r(1270)
+				margin-left: 20px
+				margin-top: 10px
 		strong
 			color: $black
 		&_wrap
@@ -80,36 +120,83 @@
 		top: 40px
 		right: 50px
 		left: auto
+		+r(1100)
+			display: none
 	&__contant
 		display: table
 		width: 100%
 		table-layout: fixed
 		border-bottom: 1px solid $body
 		+clr
+		+r(1270)
+			width: 100%
+			display: block
 	&__text
 		display: table-cell
 		width: 60%
 		padding: 25px
 		border-right: 1px solid $body
+		+r(1270)
+			width: 100%
+			display: block
+			border-bottom: 1px solid $body
+			border-right: none
+			margin-bottom: 10px
 		p
 			color: $gray
 	&__box
 		display: table-cell
 		width: 40%
 		position: relative
+		+r(1270)
+			width: 100%
+			display: block
 		.vcenter
-			width: 75%
+			width: 90%
+			position: relative
+			top: 0
+			transform: translate(-50%, 0)
 		&_item
-			white-space: nowrap
+			// white-space: nowrap//cource
+			+r(1270)
+				padding-bottom: 10px
 			img
 				width: 70px
 				height: 70px
 				display: inline-block
-				margin-right: 10px
+				margin-left: 10px
 				margin-bottom: 10px
 				vertical-align: top
-				&:nth-child(4n)
-					margin-right: 0
+				&:first-child
+					margin-left: 0
+				&:nth-child(5n)
+					margin-left: 0
+				+r(1625)
+					&:nth-child(5n)
+						margin-left: 10px
+					&:nth-child(3n+1)
+						margin-left: 0
+				+r(1370)
+					width: 31%
+					height: auto
+					margin-left: 1%
+					&:nth-child(5n)
+						margin-left: 1%
+				+r(1270)
+					width: 70px
+					height: 70px
+					margin-left: 10px
+					&:nth-child(5n)
+						margin-left: 10px
+					&:nth-child(3n+1)
+						margin-left: 10px
+				+r(338)
+					width: 47%
+					display: inline-block
+					height: auto
+					margin-left: 2% !important
+					&:nth-child(odd)
+						margin-left: 0 !important
 			a
 				color: $gray
 				text-decoration: underline
@@ -124,15 +211,27 @@
 		display: table
 		table-layout: fixed
 		+clr
+		+r(1590)
+			display: block
+			+clr
 	&__contact
 		display: table-cell
 		width: 30%
 		border-right: 1px solid $body
 		padding: 20px
+		+r(1590)
+			display: block
+			width: 100%
+			border: none
+			border-bottom: 1px solid $body
+			+clr
 		.telephone__link
 			color: $black
 			margin-bottom: 0
 			+tr(.3s)
+			+r(1590)
+				display: inline-block
+				vertical-align: top
 			i
 				+gray
 			&:hover
@@ -152,6 +251,12 @@
 		border-right: 1px solid $body
 		padding: 20px
 		color: $gray
+		+r(1590)
+			display: block
+			width: 100%
+			border: none
+			border-bottom: 1px solid $body
+			+clr
 		i
 			+gray
 		a
@@ -165,6 +270,11 @@
 		padding: 40px 25px
 		width: 30%
 		display: table-cell
+		+r(1590)
+			display: block
+			width: 100%
+			border: none
+			+clr
 		a
 			position: relative
 			padding-left: 30px
