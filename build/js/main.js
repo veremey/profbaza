@@ -1739,6 +1739,14 @@ $(document).ready(function() {
 
 	});
 
+	if ($(document).width() < 1020) {
+
+		$('.js-more_course').readmore('destroy');
+
+	};
+
+
+
 	//Больше репетиторов
 
 	$('.js-more_teacher').readmore({
@@ -1754,6 +1762,12 @@ $(document).ready(function() {
 		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
 
 	});
+
+	if ($(document).width() < 1020) {
+
+		$('.js-more_teacher').readmore('destroy');
+
+	};
 
 
 

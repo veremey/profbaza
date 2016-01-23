@@ -30,6 +30,10 @@ $(document).ready(function() {
 		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все курсы </span></a>',
 		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
 	});
+	if ($(document).width() < 1020) {
+		$('.js-more_course').readmore('destroy');
+	};
+
 	//Больше репетиторов
 	$('.js-more_teacher').readmore({
 		speed: 75,
@@ -38,6 +42,9 @@ $(document).ready(function() {
 		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все репетиторы </span></a>',
 		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
 	});
+	if ($(document).width() < 1020) {
+		$('.js-more_teacher').readmore('destroy');
+	};
 
 
 

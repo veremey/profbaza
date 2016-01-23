@@ -131,7 +131,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .user { width: 105px; height: 100px; position: relative; float: right; }
 .user:hover { cursor: pointer; opacity: 0.7; }
 .user img { width: 60px; height: 60px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-border-radius: 100%; border-radius: 100%; }
-.user__notification { position: relative; float: right; width: 26px; height: 26px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #63bd70; top: 10px; right: 10px; }
+.user__notification { display: none; position: relative; float: right; width: 26px; height: 26px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #63bd70; top: 10px; right: 10px; }
 .user__notification span { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #FFF; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
 
 .menu__small { display: none; }
@@ -623,7 +623,9 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 1300px){
  .header__logo{ width: 230px; } }
 @media only screen and (max-width: 1260px){
- .footer__box{ width: 250px; } }
+ .footer__box{ width: 295px; } }
+@media only screen and (max-width: 1220px){
+ .footer__box{ width: 228px; } }
 @media only screen and (max-width: 1180px){
  .header__profile{ width: 220px; }
  .profile{ width: 140px; }
@@ -638,6 +640,7 @@ button { background-color: transparent; cursor: pointer; }
  .footer{ display: block; }
  .footer__box:first-child{ border-right: 1px solid #e4e7e9; }
  .footer__box{ display: block; width: 50%; float: left; border-right: none; }
+ .benefit{ padding: 40px 30px 0; }
  .benefit .slide-next{ position: absolute; top: -2px; right: -50px; display: inline-block; } }
 @media only screen and (max-width: 885px){
  .sale__container .sale__item{ width: 100%; margin-right: 0 !important; } }
@@ -655,8 +658,11 @@ button { background-color: transparent; cursor: pointer; }
  .header__profile{ width: auto; }
  .profile{ display: none; }
  .user{ float: right; margin-right: 15px; height: 80px; }
+ .user__notification{ display: block; }
  .menu__small{ height: 80px; }
  .menu__small .butter{ margin-top: 35px; } }
+@media only screen and (max-width: 480px){
+ .socio__wrap{ width: 100%; padding: 0 50px; left: 0; } }
 @media only screen and (max-width: 440px){
  .sale__container .sale__info{ width: 80px; }
  .sale__container .sale__term{ padding: 25px 10px; } }
