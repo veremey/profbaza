@@ -102,8 +102,14 @@ body
 .out__header
 	position: relative
 	white-space: nowrap
-	height: 160px
-	h2
+	text-align: center
+	padding-bottom: 60px
+	+clr
+	+r(640)
+		text-align: left
+		padding-bottom: 30px
+	h2,
+	.title__light
 		display: inline-block
 		margin-right: 20px
 		vertical-align: top
@@ -115,9 +121,12 @@ body
 		+r(640)
 			display: block
 			margin-top: 15px
-	.vcenter
+	&_wrap
+		display: block
+		margin: 0 auto
 		+r(640)
 			width: 100%
+			float: left
 
 .action
 	.title__accord
