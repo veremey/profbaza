@@ -408,7 +408,8 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .company__feedback strong { color: #2b2f32; }
 .company__feedback_wrap { position: relative; display: table; table-layout: fixed; width: 100%; vertical-align: top; }
 .company .rate { display: table-cell; position: relative; width: 15%; white-space: nowrap; border-right: 1px solid #f5f8f9; }
-.company .rate p { margin: 10px 0 15px; }
+.company .rate .stars { bottom: 5px; }
+.company .rate p { float: left; margin: 10px 0 10px; }
 .company .experience { display: table-cell; position: relative; width: 15%; white-space: nowrap; border-right: 1px solid #f5f8f9; }
 .company .experience p { margin: 15px 0 0; }
 .company__cost { display: table-cell; position: relative; width: 28%; border-right: 1px solid #f5f8f9; white-space: nowrap; *zoom: 1; }
@@ -448,9 +449,9 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .company__site a:hover { text-decoration: none; color: #3ab8ea; }
 .company__site a:hover i { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale"); -webkit-filter: grayscale(0%); }
 
-.consult__logo { display: table-cell; position: relative; width: 30%; border-right: 1px solid #f5f8f9; padding: 25px 20px; white-space: nowrap; }
-.consult__logo > img { float: left; width: 70px; height: 70px; -webkit-border-radius: 100%; border-radius: 100%; vertical-align: top; }
-.consult__logo .title__name { max-width: 200px; padding-left: 10px; float: left; }
+.consult__logo { display: table-cell; position: relative; width: 30%; border-right: 1px solid #f5f8f9; padding: 25px 20px; }
+.consult__logo > img { position: absolute; top: 25px; left: 20px; width: 70px; height: 70px; -webkit-border-radius: 100%; border-radius: 100%; vertical-align: top; }
+.consult__logo .title__name { padding-left: 80px; float: left; }
 .consult__logo .title__name img { display: inline-block; margin-left: 7px; float: none; vertical-align: baseline; }
 .consult__logo .title__name br + img { margin-left: 0; }
 
@@ -620,6 +621,17 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 1625px){
  .company__box_item img:nth-child(5n){ margin-left: 10px; }
  .company__box_item img:nth-child(3n+1){ margin-left: 0; } }
+@media only screen and (max-width: 1600px){
+ .company .rate .stars{ bottom: -10px; }
+ .company .rate p{ margin: 15px 0 10px 10px; }
+ .consult .company__header{ display: block; width: 100%; zoom: 1; }
+ .consult .company__header:after{ content: " "; display: table; clear: both; }
+ .consult__logo{ width: 100%; display: block; border: none; border-bottom: 1px solid #f5f8f9; zoom: 1; }
+ .consult__logo:after{ content: " "; display: table; clear: both; }
+ .consult .vcenter{ position: relative; top: 0; left: 0; -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); transform: translate(0, 0); }
+ .consult .rate, .consult .experience, .consult .company__cost{ display: block; width: 33%; float: left; border: none; padding-left: 20px; zoom: 1; }
+ .consult .rate:after, .consult .experience:after, .consult .company__cost:after{ content: " "; display: table; clear: both; }
+ .consult .rate{ white-space: normal; } }
 @media only screen and (max-width: 1590px){
  .company__footer{ display: block; zoom: 1; }
  .company__footer:after{ content: " "; display: table; clear: both; }
@@ -644,7 +656,9 @@ button { background-color: transparent; cursor: pointer; }
  .company__feedback .stars{ margin-bottom: 30px; }
  .company__feedback p{ margin-left: 0; } }
 @media only screen and (max-width: 1400px){
- .header__menu{ margin-left: 20px; } }
+ .header__menu{ margin-left: 20px; }
+ .consult .rate, .consult .experience, .consult .company__cost{ width: 30%; }
+ .consult .rate{ width: 40%; } }
 @media only screen and (max-width: 1370px){
  .company__box_item img{ width: 31%; height: auto; margin-left: 1%; }
  .company__box_item img:nth-child(5n){ margin-left: 1%; } }
@@ -669,6 +683,8 @@ button { background-color: transparent; cursor: pointer; }
  .company__box_item img:nth-child(3n+1){ margin-left: 10px; } }
 @media only screen and (max-width: 1260px){
  .footer__box{ width: 295px; } }
+@media only screen and (max-width: 1250px){
+ .consult .rate, .consult .experience, .consult .company__cost{ width: 100%; border-bottom: 1px solid #f5f8f9; padding-bottom: 10px; } }
 @media only screen and (max-width: 1220px){
  .footer__box{ width: 228px; } }
 @media only screen and (max-width: 1180px){

@@ -93,8 +93,15 @@
 		width: 15%
 		white-space: nowrap
 		border-right: 1px solid $body
+		.stars
+			bottom: 5px
+			+r(1600)
+				bottom: -10px
 		p
-			margin: 10px 0 15px
+			float: left
+			margin: 10px 0 10px
+			+r(1600)
+				margin: 15px 0 10px 10px
 	.experience
 		display: table-cell
 		position: relative
@@ -291,23 +298,70 @@
 				i
 					+gray-zero
 
+.consult
+	.company
+		&__header
+			+r(1600)
+				display: block
+				width: 100%
+				+clr
+	&__logo
+		+r(1600)
+			width: 100%
+			display: block
+			border: none
+			border-bottom: 1px solid $body
+			+clr
+	.vcenter
+		+r(1600)
+			position: relative
+			top: 0
+			left: 0
+			transform: translate(0, 0)
+	.rate,
+	.experience,
+	.company__cost
+		+r(1600)
+			display: block
+			width: 33%
+			float: left
+			border: none
+			padding-left: 20px
+			+clr
+		+r(1400)
+			width: 30%
+		+r(1250)
+			width: 100%
+			border-bottom: 1px solid $body
+			padding-bottom: 10px
+	.rate
+		+r(1600)
+			white-space: normal
+		+r(1400)
+			width: 40%
+
+
+
+
 .consult__logo
 	display: table-cell ////
 	position: relative
 	width: 30%
 	border-right: 1px solid $body
 	padding: 25px 20px
-	white-space: nowrap
+	// white-space: nowrap
 	> img
-		float: left
+		position: absolute
+		top: 25px
+		left: 20px
 		width: 70px
 		height: 70px
 		-webkit-border-radius: 100%
 		border-radius: 100%
 		vertical-align: top
 	.title__name
-		max-width: 200px
-		padding-left: 10px
+		// max-width: 200px
+		padding-left: 80px
 		float: left
 		img
 			display: inline-block
