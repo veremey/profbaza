@@ -86,6 +86,15 @@ body
 	width: calc(100% - 620px)
 	margin-left: 20px
 	+clr
+	+r(1700)
+		width: calc(100% - 580px)
+	&.wide1050
+		+r(1050)
+			width: calc(100% - 320px)
+	&.all760
+		+r(760)
+			width: 90%
+			margin: 0 5%
 
 .contant-container
 	background-color: #FFF
@@ -117,6 +126,7 @@ body
 	+r(640)
 		text-align: left
 		padding-bottom: 30px
+		padding-left: 5%
 	h2,
 	.title__light
 		display: inline-block

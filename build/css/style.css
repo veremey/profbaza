@@ -615,6 +615,7 @@ button { background-color: transparent; cursor: pointer; }
  .sale__container .sale__term{ padding: 25px; } }
 @media only screen and (max-width: 1700px){
  .content{ width: -webkit-calc(100% - 640px); width: calc(100% - 640px); }
+ .container{ width: -webkit-calc(100% - 580px); width: calc(100% - 580px); }
  .side{ width: 300px; } }
 @media only screen and (max-width: 1625px){
  .company__box_item img:nth-child(5n){ margin-left: 10px; }
@@ -648,7 +649,8 @@ button { background-color: transparent; cursor: pointer; }
  .company__box_item img{ width: 31%; height: auto; margin-left: 1%; }
  .company__box_item img:nth-child(5n){ margin-left: 1%; } }
 @media only screen and (max-width: 1300px){
- .header__logo{ width: 230px; } }
+ .header__logo{ width: 230px; }
+ .article__empty img{ float: none; width: 100%; margin-right: 0; } }
 @media only screen and (max-width: 1270px){
  .company__header{ display: block; }
  .company__logo, .company__feedback{ display: block; width: 100%; zoom: 1; }
@@ -677,6 +679,7 @@ button { background-color: transparent; cursor: pointer; }
  .company .icon-heart{ display: none; } }
 @media only screen and (max-width: 1050px){
  .content.wide1050{ width: -webkit-calc(100% - 320px); width: calc(100% - 320px); }
+ .container.wide1050{ width: -webkit-calc(100% - 320px); width: calc(100% - 320px); }
  .header__menu{ display: none; }
  .header__profile{ width: 260px; }
  .profile{ border: none; }
@@ -695,18 +698,19 @@ button { background-color: transparent; cursor: pointer; }
  .more{ margin: 40px auto 70px; } }
 @media only screen and (max-width: 760px){
  .content.all760{ width: 90%; margin: 0 5%; }
+ .container.all760{ width: 90%; margin: 0 5%; }
  .footer__box{ width: 100%; }
  .socio__wrap{ width: 85%; }
  .benefit.action{ display: inline-block; }
  .hide760{ display: none; }
  .all760{ width: 100%; } }
 @media only screen and (max-width: 640px){
- .out__header{ text-align: left; padding-bottom: 30px; }
+ .out__header{ text-align: left; padding-bottom: 30px; padding-left: 5%; }
  .out__header h2, .out__header .title__light{ margin-right: 0; }
  .out__header button{ display: block; margin-top: 15px; }
  .out__header_wrap{ width: 100%; float: left; }
  .header{ margin-bottom: 10px; }
- .header__logo{ padding-bottom: 0; border: none; width: auto; }
+ .header__logo{ padding-bottom: 0; border: none; width: auto; padding-left: 5%; }
  .header__logo h1{ line-height: 80px; margin-top: 0; }
  .header__logo p{ display: none; }
  .header__profile{ width: auto; }
