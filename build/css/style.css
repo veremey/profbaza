@@ -332,7 +332,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .inervision { background-color: #f5f8f9; padding: 45px 14%; }
 .inervision__item { width: 48%; *zoom: 1; }
 .inervision__item:after { content: " "; display: table; clear: both; }
-.inervision textarea { width: 100%; height: 180px; padding: 20px 30px; margin-bottom: 50px; background-color: #FFF; border: 1px solid transparent; outline: none; resize: none; -webkit-transition: 0.3s; transition: 0.3s; }
+.inervision textarea { width: 100%; height: 180px; padding: 20px 30px; margin-bottom: 50px; background-color: #FFF; border: 1px solid transparent; outline: none; resize: none; font-size: 16px; -webkit-transition: 0.3s; transition: 0.3s; }
 .inervision textarea:hover, .inervision textarea:focus { border: 1px solid #9ba1a5; }
 .inervision textarea:-ms-input-placeholder { color: #9ba1a5; font-size: 16px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 .inervision textarea::-webkit-input-placeholder { color: #9ba1a5; font-size: 16px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
