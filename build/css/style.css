@@ -238,7 +238,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .training:after { content: " "; display: table; clear: both; }
 .training__item { position: relative; padding: 30px 0 20px; border-bottom: 1px solid #dfe5e7; }
 .training__item:last-child { border: none; }
-.training img { position: absolute; top: 35px; left: 0; width: 47px; height: auto; }
+.training__item > img { position: absolute; top: 35px; left: 0; width: 47px; height: auto; }
 .training__center { padding-left: 70px; }
 .training__wrap { margin-top: 10px; }
 .training__wrap h3 { font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
@@ -578,6 +578,7 @@ button { background-color: transparent; cursor: pointer; }
 
 .title__side { font-size: 24px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
 .title__training { font-size: 12px; color: #9ba1a5; }
+.title__training img { vertical-align: bottom; }
 .title__container { font-size: 36px; margin: 20px 0 10px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 .title__slider { font-size: 16px; text-transform: uppercase; margin-bottom: 35px; font-family: "Open Sans", Arial, sans-serif; font-weight: 700; }
 .title__light { font-size: 36px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
@@ -647,6 +648,8 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 1540px){
  .footer__box{ width: 305px; } }
 @media only screen and (max-width: 1500px){
+ .content.less1500{ width: -webkit-calc(100% - 560px); width: calc(100% - 560px); }
+ .caption .coach__wrap{ padding-right: 25px; }
  .sale__container .sale__item{ width: 48%; }
  .sale__container .sale__item:nth-child(3n){ margin-right: 2%; }
  .sale__container .sale__item:nth-child(2n){ margin-right: 0; }
@@ -654,7 +657,8 @@ button { background-color: transparent; cursor: pointer; }
  .company__feedback{ width: 20%; }
  .company__feedback .vcenter{ white-space: normal; width: 90%; height: 50%; top: 40%; }
  .company__feedback .stars{ margin-bottom: 30px; }
- .company__feedback p{ margin-left: 0; } }
+ .company__feedback p{ margin-left: 0; }
+ .side.less1500{ width: 230px; } }
 @media only screen and (max-width: 1400px){
  .header__menu{ margin-left: 20px; }
  .consult .rate, .consult .experience, .consult .company__cost{ width: 30%; }
@@ -662,6 +666,9 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 1370px){
  .company__box_item img{ width: 31%; height: auto; margin-left: 1%; }
  .company__box_item img:nth-child(5n){ margin-left: 1%; } }
+@media only screen and (max-width: 1350px){
+ .content.wide1350{ width: -webkit-calc(100% - 320px); width: calc(100% - 320px); }
+ .hide1350{ display: none; } }
 @media only screen and (max-width: 1300px){
  .header__logo{ width: 230px; }
  .article__empty img{ float: none; width: 100%; margin-right: 0; } }
@@ -692,6 +699,7 @@ button { background-color: transparent; cursor: pointer; }
  .profile{ width: 140px; }
  .user{ width: 80px; } }
 @media only screen and (max-width: 1100px){
+ .coach__wrap{ width: -webkit-calc(100% - 220px); width: calc(100% - 220px); }
  .company .icon-heart{ display: none; } }
 @media only screen and (max-width: 1050px){
  .content.wide1050{ width: -webkit-calc(100% - 320px); width: calc(100% - 320px); }
@@ -708,6 +716,9 @@ button { background-color: transparent; cursor: pointer; }
  .footer__box{ display: block; width: 50%; float: left; border-right: none; }
  .benefit{ padding: 40px 30px 0; }
  .benefit .slide-next{ position: absolute; top: -2px; right: -50px; display: inline-block; } }
+@media only screen and (max-width: 1000px){
+ .content.all1000{ width: 100%; margin-top: 20px; margin-left: 0; }
+ .all1000{ width: 100%; } }
 @media only screen and (max-width: 885px){
  .sale__container .sale__item{ width: 100%; margin-right: 0 !important; } }
 @media only screen and (max-width: 768px){
