@@ -1679,6 +1679,16 @@ $(document).ready(function() {
 
 
 
+	//клонирую Количество курсов в сайдбар при < 1000px
+
+	if($(document).width() < 1000){
+
+		var languages = $('.js-clone').remove();
+
+		$('.telephone').before(languages);
+
+	};
+
 	$('.js_lang_acardion').on('click', function() {
 
 		$(this).toggleClass('is_active').next('.js_lang_item');
@@ -1686,6 +1696,8 @@ $(document).ready(function() {
 		return false;
 
 	});
+
+
 
 
 
@@ -1768,10 +1780,6 @@ $(document).ready(function() {
 		$('.js-more_teacher').readmore('destroy');
 
 	};
-
-
-
-
 
 
 

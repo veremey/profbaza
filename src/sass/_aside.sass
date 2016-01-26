@@ -10,6 +10,15 @@
 		padding: 25px
 	.dignity
 		margin-bottom: 30px
+		&__item
+			+r(1000)
+				width: 25%
+				&:nth-child(2)
+					border-right: 1px solid $body
+			+r(640)
+				width: 50%
+				&:nth-child(2)
+					border-right: none
 
 .side__small
 	float: right
@@ -48,11 +57,15 @@
 	&__info
 		margin: 10px auto
 		text-align: center
+		+r(1000)
+			margin-top: 0
 		p,
 		span
 			color: $gray
 			font-size: 20px
 			margin-top: 15px
+			+r(1000)
+				margin-top: 7px
 			a
 				color: $blue
 				text-decoration: underline

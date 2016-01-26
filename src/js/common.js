@@ -1,9 +1,15 @@
 $(document).ready(function() {
 
+	//клонирую Количество курсов в сайдбар при < 1000px
+	if($(document).width() < 1000){
+		var languages = $('.js-clone').remove();
+		$('.telephone').before(languages);
+	};
 	$('.js_lang_acardion').on('click', function() {
 		$(this).toggleClass('is_active').next('.js_lang_item');
 		return false;
 	});
+
 
 	// открыть окно меню
 	$('.menu__small').on('click', function() {
@@ -45,8 +51,6 @@ $(document).ready(function() {
 	if ($(document).width() < 1020) {
 		$('.js-more_teacher').readmore('destroy');
 	};
-
-
 
 	// footer > 760
 	if($(document).width() <= 1020){

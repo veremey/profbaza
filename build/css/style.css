@@ -261,6 +261,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .coach__wrap:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .coach__item { display: inline-block; text-align: center; }
 .coach__item p { color: #2b2f32; display: inline-block; vertical-align: top; font-size: 14px; line-height: 28px; }
+.coach__item .coach__item_place { display: none; }
 .coach__item a { display: inline-block; vertical-align: top; color: #3ab8ea; text-decoration: underline; font-size: 14px; line-height: 28px; }
 .coach__item a:hover { text-decoration: none; }
 
@@ -634,6 +635,8 @@ button { background-color: transparent; cursor: pointer; }
  .consult .rate:after, .consult .experience:after, .consult .company__cost:after{ content: " "; display: table; clear: both; }
  .consult .rate{ white-space: normal; } }
 @media only screen and (max-width: 1590px){
+ .comment .dignity__item{ width: 50%; }
+ .comment .dignity__item:nth-of-type(2){ border-right: none; }
  .company__footer{ display: block; zoom: 1; }
  .company__footer:after{ content: " "; display: table; clear: both; }
  .company__contact{ display: block; width: 100%; border: none; border-bottom: 1px solid #f5f8f9; zoom: 1; }
@@ -718,6 +721,16 @@ button { background-color: transparent; cursor: pointer; }
  .benefit .slide-next{ position: absolute; top: -2px; right: -50px; display: inline-block; } }
 @media only screen and (max-width: 1000px){
  .content.all1000{ width: 100%; margin-top: 20px; margin-left: 0; }
+ .side .dignity__item{ width: 25%; }
+ .side .dignity__item:nth-child(2){ border-right: 1px solid #f5f8f9; }
+ .school__info{ margin-top: 0; }
+ .school__info p, .school__info span{ margin-top: 7px; }
+ .coach__wrap{ width: 100%; margin-top: 15px; }
+ .coach__item{ margin-bottom: 10px; }
+ .coach__item p{ line-height: 20px; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
+ .coach__item .coach__item_place{ display: block; font-size: 14px; line-height: 20px; margin-top: 0; text-align: left; -moz-text-align-last: left; text-align-last: left; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
+ .coach__item a{ line-height: 20px; }
+ .lang__header_name{ width: 100%; float: none; }
  .all1000{ width: 100%; } }
 @media only screen and (max-width: 885px){
  .sale__container .sale__item{ width: 100%; margin-right: 0 !important; } }
@@ -745,7 +758,10 @@ button { background-color: transparent; cursor: pointer; }
  .user{ float: right; margin-right: 15px; height: 80px; }
  .user__notification{ display: block; }
  .menu__small{ height: 80px; }
- .menu__small .butter{ margin-top: 35px; } }
+ .menu__small .butter{ margin-top: 35px; }
+ .side .dignity__item{ width: 50%; }
+ .side .dignity__item:nth-child(2){ border-right: none; }
+ .coach__item{ width: 100%; padding-left: 40px; } }
 @media only screen and (max-width: 480px){
  .socio__wrap{ width: 100%; padding: 0 50px; left: 0; } }
 @media only screen and (max-width: 440px){

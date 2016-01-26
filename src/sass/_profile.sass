@@ -34,15 +34,36 @@
 		+justify
 		+r(1100)
 			width: calc(100% - 220px)
+		+r(1000)
+			width: 100%
+			margin-top: 15px
 	&__item
 		display: inline-block
 		text-align: center
+		+r(1000)
+			margin-bottom: 10px
+		+r(640)
+			width: 100%
+			padding-left: 40px
 		p
 			color: $black
 			display: inline-block
 			vertical-align: top
 			font-size: 14px
 			line-height: 28px
+			+r(1000)
+				line-height: 20px
+				+os
+		.coach__item_place
+			display: none
+			+r(1000)
+				display: block
+				font-size: 14px
+				line-height: 20px
+				margin-top: 0
+				text-align: left
+				text-align-last: left
+				+osl
 		a
 			display: inline-block
 			vertical-align: top
@@ -50,8 +71,12 @@
 			text-decoration: underline
 			font-size: 14px
 			line-height: 28px
+			+r(1000)
+				line-height: 20px
 			&:hover
 				text-decoration: none
+
+
 
 ///////////////////////////////
 ///   lang
@@ -82,6 +107,9 @@
 				height: auto
 		&_name
 			float: left
+			+r(1000)
+				width: 100%
+				float: none
 		&_cost
 			float: right
 	&__wrap
