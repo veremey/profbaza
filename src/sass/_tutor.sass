@@ -1,19 +1,27 @@
 .tutor
+	float: right
+	width: 64%
 	background-color: #FFF
-	padding: 35px 10px 20px
+	padding: 35px 10px 5px
+	margin-bottom: 20px
 	+clr
 	&__item
 		position: relative
 		float: left
 		text-align: center
 	&__img
+		display: block
 		position: relative
 		width: 96px
 		height: 96px
-		border: 1px solid $gray
+		border: 1px solid $body
 		-webkit-border-radius: 100%
 		border-radius: 100%
 		margin: 0 auto
+		z-index: 1
+		box-shadow: 0 0 0 10px #fff
+		&:hover
+			opacity: 0.7
 		img
 			+vcenter
 		&__text
@@ -28,10 +36,10 @@
 		&:after
 			content: ""
 			position: absolute
-			top: 30px
-			width: 40%
+			top: 45px
+			width: 30%
 			height: 6px
-			left: 0
+			right: 0
 			background-image: url("../img/trig.jpg")
 			background-repeat: repeat-x
 	&__center
@@ -39,29 +47,39 @@
 		&:after
 			content: ""
 			position: absolute
-			top: 30px
-			width: 40%
+			top: 45px
+			width: 30%
 			height: 6px
-			left: 0
+			right: 0
 			background-image: url("../img/trig.jpg")
 			background-repeat: repeat-x
 		&:before
 			content: ""
 			position: absolute
-			top: 30px
-			width: 40%
+			top: 45px
+			width: 30%
 			height: 6px
-			right: 0
+			left: 0
 			background-image: url("../img/trig.jpg")
 			background-repeat: repeat-x
 	&__last
 		width: 37%
-		&:after
+		&:before
 			content: ""
 			position: absolute
-			top: 30px
-			width: 40%
+			top: 45px
+			width: 30%
 			height: 6px
-			right: 0
+			left: 0
 			background-image: url("../img/trig.jpg")
 			background-repeat: repeat-x
+	&__text
+		padding: 10px 25px
+		h3
+			font-size: 16px
+			color: $black
+			margin-bottom: 15px
+			+osb
+		p
+			color: #7C8B95
+			+os

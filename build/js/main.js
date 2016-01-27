@@ -1759,27 +1759,31 @@ $(document).ready(function() {
 
 
 
-	//Больше репетиторов
-
-	$('.js-more_teacher').readmore({
-
-		speed: 75,
-
-		collapsedHeight: 260,
-
-		embedCSS: false,
-
-		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все репетиторы </span></a>',
-
-		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
-
-	});
-
 	if ($(document).width() < 1020) {
 
 		$('.js-more_teacher').readmore('destroy');
 
 	};
+
+
+
+	//Больше репетиторов главная стр
+
+	// $('.js-more__list').readmore({
+
+	// 	speed: 75,
+
+	// 	collapsedHeight: 125,
+
+	// 	embedCSS: false,
+
+	// 	moreLink: '<a class="read__more" href="#"><span>Все репетиторы </span><i class="icon-bottom"></i></a>',
+
+	// 	lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span><i class="icon-top"></i></a>'
+
+	// });
+
+
 
 
 
