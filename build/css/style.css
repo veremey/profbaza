@@ -472,6 +472,21 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .experience__bottom { padding-left: 20px; padding-bottom: 40px; position: relative; }
 .experience__bottom::after { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; -webkit-border-radius: 100%; border-radius: 100%; background-color: #fff; border: 1px solid #9ba1a5; }
 
+.tutor { background-color: #FFF; padding: 35px 10px 20px; *zoom: 1; }
+.tutor:after { content: " "; display: table; clear: both; }
+.tutor__item { position: relative; float: left; text-align: center; }
+.tutor__img { position: relative; width: 96px; height: 96px; border: 1px solid #9ba1a5; -webkit-border-radius: 100%; border-radius: 100%; margin: 0 auto; }
+.tutor__img img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.tutor__img__text h3 { font-size: 16px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
+.tutor__img__text p { color: #7C8B95; }
+.tutor__first { width: 37%; }
+.tutor__first:after { content: ""; position: absolute; top: 30px; width: 40%; height: 6px; left: 0; background-image: url("../img/trig.jpg"); background-repeat: repeat-x; }
+.tutor__center { width: 26%; }
+.tutor__center:after { content: ""; position: absolute; top: 30px; width: 40%; height: 6px; left: 0; background-image: url("../img/trig.jpg"); background-repeat: repeat-x; }
+.tutor__center:before { content: ""; position: absolute; top: 30px; width: 40%; height: 6px; right: 0; background-image: url("../img/trig.jpg"); background-repeat: repeat-x; }
+.tutor__last { width: 37%; }
+.tutor__last:after { content: ""; position: absolute; top: 30px; width: 40%; height: 6px; right: 0; background-image: url("../img/trig.jpg"); background-repeat: repeat-x; }
+
 .ui-slider { position: relative; width: 190px; float: right; margin-top: 10px; }
 .ui-slider:before, .ui-slider:after { position: absolute; top: 10px; color: #9ba1a5; font-size: 12px; }
 .ui-slider:before { content: "0"; left: -3px; }

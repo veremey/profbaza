@@ -1,0 +1,67 @@
+.tutor
+	background-color: #FFF
+	padding: 35px 10px 20px
+	+clr
+	&__item
+		position: relative
+		float: left
+		text-align: center
+	&__img
+		position: relative
+		width: 96px
+		height: 96px
+		border: 1px solid $gray
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		margin: 0 auto
+		img
+			+vcenter
+		&__text
+			h3
+				font-size: 16px
+				color: $black
+				+oss
+			p
+				color: #7C8B95
+	&__first
+		width: 37%
+		&:after
+			content: ""
+			position: absolute
+			top: 30px
+			width: 40%
+			height: 6px
+			left: 0
+			background-image: url("../img/trig.jpg")
+			background-repeat: repeat-x
+	&__center
+		width: 26%
+		&:after
+			content: ""
+			position: absolute
+			top: 30px
+			width: 40%
+			height: 6px
+			left: 0
+			background-image: url("../img/trig.jpg")
+			background-repeat: repeat-x
+		&:before
+			content: ""
+			position: absolute
+			top: 30px
+			width: 40%
+			height: 6px
+			right: 0
+			background-image: url("../img/trig.jpg")
+			background-repeat: repeat-x
+	&__last
+		width: 37%
+		&:after
+			content: ""
+			position: absolute
+			top: 30px
+			width: 40%
+			height: 6px
+			right: 0
+			background-image: url("../img/trig.jpg")
+			background-repeat: repeat-x
