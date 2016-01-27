@@ -1,0 +1,79 @@
+.choice
+	width: 62%
+	background-color: #fff
+	+clr
+	&__tab
+		width: 100%
+		border-bottom: 1px solid $body
+		+clr
+		.title__light
+			padding: 20px 34px
+			border-right: 1px solid $body
+			float: left
+			&:last-child
+				border-right: 1px solid $n
+			a
+				display: inline-block
+				color: $blue
+				border-bottom: 1px dashed $blue
+				line-height: 0.9
+				&:hover
+					border-bottom: 1px dashed $n
+				&.is_active
+					color: $black
+					border-bottom: 1px solid $n
+	&__text
+		padding: 25px 34px
+		p
+			font-size: 16px
+	&__form
+		padding: 0 34px 30px
+		+clr
+		&_selects
+			width: calc(100% - 140px)
+			float: left
+			+clr
+		.btn
+			width: 130px
+			background-color: $green
+			height: 54px
+			vertical-align: top
+			float: right
+			color: #fff
+			font-size: 18px
+			-webkit-border-radius: 54px
+			border-radius: 54px
+			+osl
+.subject
+	position: relative
+	width: 58%
+	float: left
+	margin-right: 3%
+	&:before
+		content: ""
+		position: absolute
+		top: 20px
+		left: 15px
+		+s(icon-subject)
+		z-index: 1
+.town
+	position: relative
+	width: 38%
+	float: left
+	&:before
+		content: ""
+		position: absolute
+		top: 20px
+		left: 15px
+		+s(icon-town)
+		z-index: 1
+
+.example
+	margin-top: 15px
+	color: $gray
+	+os
+	a
+		color: $blue
+		border-bottom: 1px dashed $blue
+		&:hover
+			border-bottom: 1px solid $n

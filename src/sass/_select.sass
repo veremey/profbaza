@@ -1,0 +1,66 @@
+.select
+	position: relative
+	// width: 100%
+	cursor: pointer
+	font-size: 15px
+	font-weight: bold
+	z-index: 120
+.select__text
+	position: relative
+	display: block
+	height: 54px
+	line-height: 54px
+	padding: 0 30px 0 50px //<-
+	font-size: 18px
+	border: 1px solid #e8ecef
+	background: #fff
+	-webkit-border-radius: 54px
+	border-radius: 54px
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	z-index: 110
+	+box
+	&:after
+		content: ""
+		position: absolute
+		top: 25px
+		right: 15px
+		+arr(10, 5, #000, b)
+
+.select__list
+	position: absolute
+	display: none
+	width: 100%
+	min-width: 215px//??
+	left: 1px
+	right: 1px
+	top: 0px
+	padding: 70px 0 30px 50px
+	z-index: 100
+	background: #fff
+	border: 1px solid #e8ecef
+	border-top: none
+	border-radius: 26px
+.select__list li
+	width: 100%
+	+os
+	+tr(.2s linear)
+	a
+		display: inline-block
+		font-size: 16px
+		line-height: 40px
+		color: $black
+		+os
+		+tr(.3s)
+		&:hover
+			color: $blue
+	h4
+		text-align: center
+	span
+		font-size: 13px
+		margin-left: 14px
+
