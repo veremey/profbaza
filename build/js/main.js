@@ -1961,6 +1961,46 @@ $(document).ready(function() {
 
 
 
+	$('.news__slider').slick({
+
+		infinite: true,
+
+		slidesToShow: 2,
+
+		slidesToScroll: 1,
+
+		adaptiveHeight: true,
+
+		autoplay: true,
+
+		autoplaySpeed: 200000,
+
+		prevArrow: $('.js-yellow__back'),
+
+		nextArrow: $('.js-yellow__next')
+
+		// responsive: [
+
+		// 	{
+
+		// 		breakpoint: 765,
+
+		// 		settings: {
+
+		// 			slidesToShow: 1,
+
+		// 			variableWidth: false
+
+		// 		}
+
+		// 	},
+
+		// ]
+
+	});
+
+
+
 	$('.cycle').slick({
 
 		infinite: true,
