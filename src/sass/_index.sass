@@ -9,18 +9,28 @@
 	background-color: $blue
 	background-position: bottom right
 	background-repeat: no-repeat
+	+r(1165)
+		width: 100%
+	+r(660)
+		padding: 20px 30px
+		background-image: url("../img/baba.png")
+		height: 160px
 	strong
 		font-size: 76px
 		color: #FFF
 		text-transform: uppercase
 		line-height: .7
 		+osbl
+		+r(660)
+			font-size: 40px
 	p
 		font-size: 14px
 		color: #FFF
 		text-transform: uppercase
 		+osb
 		margin-bottom: 15px
+		+r(660)
+			font-size: 15px
 
 .student
 	width: 35%
@@ -29,6 +39,9 @@
 	background-color: #FFF
 	margin-bottom: 20px
 	+clr
+	+r(1165)
+		width: 100%
+		margin-top: 20px
 	&__header
 		border-bottom: 1px solid $body
 		padding: 25px 30px
@@ -36,12 +49,29 @@
 		p
 			float: right
 			color: $gray
-			width: 36%
+			font-size: 14px
+			// width: 36%
+			width: calc(100% - 255px)
 			+os
+			+r(1345)
+				width: 100%
+				float: left
+				margin-top: 5px
+			+r(1165)
+				float: right
+				width: calc(100% - 255px)
+			+r(660)
+				width: 100%
+				float: left
+				margin-top: 10px
 	&__num
 		float: left
-		width: 60%
+		// width: 60%
+		width: 246px
 		position: relative
+		+r(660)
+			width: 100%
+
 		li
 			position: relative
 			width: 19%
@@ -52,6 +82,9 @@
 			border-right: 1px solid #DEE1E3
 			box-shadow: inset 0 -1px 5px 0 #dee1e3
 			border-radius: 6px
+			+r(660)
+				height: 0
+				padding-top: 25%
 			&:after
 				content: ""
 				position: absolute
@@ -61,6 +94,7 @@
 				background-color: #dee1e3
 				left: 0
 				right: 0
+
 		span
 			+vcenter
 			font-size: 24px
@@ -71,15 +105,27 @@
 		padding: 30px 35px
 		position: relative
 		+clr
+		+r(660)
+			padding: 20px 30px
 		img
 			position: absolute
 			left: 35px
 			top: 30px
 			width: 64px
+			height: 64px
 			-webkit-border-radius: 100%
 			border-radius: 100%
+			+r(660)
+				width: 60px
+				height: 60px
+				top: 20px
+				left: 50%
+				+trx(-50%)
 	&__text
 		padding-left: 85px
+		+r(660)
+			padding-top: 85px
+			padding-left: 0
 		p
 			font-size: 16px
 			color: $black
@@ -88,6 +134,7 @@
 		span
 			display: block
 			color: #7C8B95
+			font-size: 14px
 			+os
 
 .categories
@@ -101,6 +148,10 @@
 		+clr
 		&:last-child
 			margin-right: 0
+		+r(1165)
+			width: 100%
+			margin-right: 0
+			margin-top: 20px
 	&__header
 		border-bottom: 1px solid $body
 		padding: 30px
@@ -108,6 +159,8 @@
 		padding: 30px
 		float: left
 		width: 33.33%
+		+r(660)
+			width: 100%
 		li
 			display: block
 			margin-bottom: 15px
@@ -119,6 +172,8 @@
 			+tr(.3s)
 			&:hover
 				color: $black
+			+r(660)
+				font-size: 16px
 		.read_more
 			position: relative
 			&:after
@@ -144,7 +199,6 @@
 		// 		top: 2px
 		// 		right: -40px
 
-
 .entrance
 	width: 300px
 	float: left
@@ -152,6 +206,9 @@
 	padding: 40px 30px
 	margin-bottom: 40px
 	+clr
+	+r(660)
+		width: 100%
+		margin-bottom: 20px
 	h4
 		font-size: 30px
 		color: #fff
@@ -191,6 +248,8 @@
 	float: right
 	margin-bottom: 40px
 	+clr
+	+r(660)
+		width: 100%
 	&__slider
 		padding: 45px 35px
 		background-color: #FFF

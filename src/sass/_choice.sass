@@ -4,6 +4,10 @@
 	background-color: #fff
 	margin-bottom: 20px
 	+clr
+	+r(1165)
+		width: 100%
+	.show660
+		background-color: $body
 	&__tab
 		width: 100%
 		border-bottom: 1px solid $body
@@ -12,8 +16,13 @@
 			padding: 20px 34px
 			border-right: 1px solid $body
 			float: left
+			+r(660)
+				width: 100%
+				float: right
 			&:last-child
 				border-right: 1px solid $n
+				+r(660)
+					float: left
 			a
 				display: inline-block
 				color: $blue
@@ -35,6 +44,14 @@
 			width: calc(100% - 140px)
 			float: left
 			+clr
+			+r(1415)
+				width: 100%
+			+r(1165)
+				width: calc(100% - 140px)
+				float: left
+			+r(800)
+				width: 100%
+				float: none
 		.btn
 			width: 130px
 			background-color: $green
@@ -46,36 +63,65 @@
 			-webkit-border-radius: 54px
 			border-radius: 54px
 			+osl
+			+r(1415)
+				width: 300px
+				float: none
+				margin: 10px auto
+			+r(1165)
+				width: 130px
+				float: right
+				margin: 0
+			+r(800)
+				float: left
+				width: 50%
+				margin: 15px 0 0 25%
+			+r(660)
+				width: 100%
+				margin: 20px 0 0
 .subject
 	position: relative
 	width: 58%
 	float: left
 	margin-right: 3%
+	z-index: 135
+	+r(895)
+		width: 49%
+		margin-right: 2%
+	+r(660)
+		width: 100%
+		margin: 0 0 20px
 	&:before
 		content: ""
 		position: absolute
 		top: 20px
 		left: 15px
 		+s(icon-subject)
-		z-index: 1
+		z-index: 130
 .town
 	position: relative
 	width: 38%
 	float: left
+	+r(895)
+		width: 49%
+	+r(660)
+		width: 100%
+		margin: 0
 	&:before
 		content: ""
 		position: absolute
-		top: 20px
-		left: 15px
+		top: 17px
+		left: 21px
 		+s(icon-town)
-		z-index: 1
+		z-index: 130
 
 .example
 	margin-top: 15px
 	color: $gray
+	font-size: 14px
 	+os
 	a
 		color: $blue
+		font-size: 14px
 		border-bottom: 1px dashed $blue
 		&:hover
 			border-bottom: 1px solid $n

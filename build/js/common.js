@@ -149,16 +149,15 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 200000,
 		prevArrow: $('.js-yellow__back'),
-		nextArrow: $('.js-yellow__next')
-		// responsive: [
-		// 	{
-		// 		breakpoint: 765,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			variableWidth: false
-		// 		}
-		// 	},
-		// ]
+		nextArrow: $('.js-yellow__next'),
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
 
 	$('.cycle').slick({

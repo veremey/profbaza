@@ -1977,25 +1977,23 @@ $(document).ready(function() {
 
 		prevArrow: $('.js-yellow__back'),
 
-		nextArrow: $('.js-yellow__next')
+		nextArrow: $('.js-yellow__next'),
 
-		// responsive: [
+		responsive: [
 
-		// 	{
+			{
 
-		// 		breakpoint: 765,
+				breakpoint: 1000,
 
-		// 		settings: {
+				settings: {
 
-		// 			slidesToShow: 1,
+					slidesToShow: 1
 
-		// 			variableWidth: false
+				}
 
-		// 		}
+			},
 
-		// 	},
-
-		// ]
+		]
 
 	});
 
