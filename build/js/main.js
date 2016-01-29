@@ -1735,6 +1735,14 @@ $(document).ready(function() {
 
 	});
 
+
+
+	if ($(document).width() < 1020) {
+
+		$('.programm__name span').readmore('destroy');
+
+	};
+
 	// больше Курсов
 
 	$('.js-more_course').readmore({
@@ -2023,23 +2031,35 @@ $(document).ready(function() {
 
 		// nextArrow: $('.js-slider__next'),
 
-		// responsive: [
+		responsive: [
 
-		// 	{
+			{
 
-		// 		breakpoint: 765,
+				breakpoint: 1650,
 
-		// 		settings: {
+				settings: {
 
-		// 			slidesToShow: 1,
+					slidesToShow: 2,
 
-		// 			variableWidth: false
+					variableWidth: false
 
-		// 		}
+				}
 
-		// 	},
+			},
 
-		// ]
+			{
+
+				breakpoint: 770,
+
+				settings: {
+
+					slidesToShow: 1
+
+				}
+
+			},
+
+		]
 
 	});
 
@@ -2065,23 +2085,23 @@ $(document).ready(function() {
 
 		nextArrow: $('.js-sale__next'),
 
-		// responsive: [
+		responsive: [
 
-		// 	{
+			{
 
-		// 		breakpoint: 765,
+				breakpoint: 870,
 
-		// 		settings: {
+				settings: {
 
-		// 			slidesToShow: 1,
+					slidesToShow: 1,
 
-		// 			variableWidth: false
+					variableWidth: false
 
-		// 		}
+				}
 
-		// 	},
+			},
 
-		// ]
+		]
 
 	});
 
@@ -2105,9 +2125,41 @@ $(document).ready(function() {
 
 		prevArrow: $('.js-gallery__back'),
 
-		nextArrow: $('.js-gallery__next')
+		nextArrow: $('.js-gallery__next'),
+
+		responsive: [
+
+			{
+
+				breakpoint: 730,
+
+				settings: {
+
+					slidesToShow: 2
+
+				}
+
+			},
+
+			{
+
+				breakpoint: 660,
+
+				settings: {
+
+					slidesToShow: 1
+
+				}
+
+			},
+
+		]
 
 	});
+
+
+
+
 
 	//если фоток или видео в .gallery меньше 4 удаляем кнопки управления слайдером
 

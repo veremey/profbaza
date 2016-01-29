@@ -28,6 +28,10 @@ $(document).ready(function() {
 		moreLink: '<a class="read__more" href="#"><span>Читать полностью </span></a>',
 		lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span></a>'
 	});
+
+	if ($(document).width() < 1020) {
+		$('.programm__name span').readmore('destroy');
+	};
 	// больше Курсов
 	$('.js-more_course').readmore({
 		speed: 75,
@@ -172,15 +176,21 @@ $(document).ready(function() {
 		autoplaySpeed: 200000,
 		// prevArrow: $('.js-slider__back'),
 		// nextArrow: $('.js-slider__next'),
-		// responsive: [
-		// 	{
-		// 		breakpoint: 765,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			variableWidth: false
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 1650,
+				settings: {
+					slidesToShow: 2,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 770,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
 
 	//akcii
@@ -193,15 +203,15 @@ $(document).ready(function() {
 		autoplaySpeed: 200000,
 		prevArrow: $('.js-sale__back'),
 		nextArrow: $('.js-sale__next'),
-		// responsive: [
-		// 	{
-		// 		breakpoint: 765,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			variableWidth: false
-		// 		}
-		// 	},
-		// ]
+		responsive: [
+			{
+				breakpoint: 870,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			},
+		]
 	});
 
 	//fotki
@@ -213,8 +223,24 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 200000,
 		prevArrow: $('.js-gallery__back'),
-		nextArrow: $('.js-gallery__next')
+		nextArrow: $('.js-gallery__next'),
+		responsive: [
+			{
+				breakpoint: 730,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 660,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
+
+
 	//если фоток или видео в .gallery меньше 4 удаляем кнопки управления слайдером
 	if($('.gallery__item').length <= 4){
 		$('.js-nextSlider4').find('.caption__btn').remove();

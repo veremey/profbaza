@@ -78,6 +78,8 @@
 	&__text
 		padding: 50px 40px 30px
 		border: 1px solid $body
+		+r(400)
+			padding: 40px 20px 30px
 		p
 			color: $gray
 	.title__side
@@ -92,6 +94,12 @@
 		width: 165px
 		white-space: nowrap
 		border-right: 1px solid $body
+		+r(520)
+			width: 120px
+		+r(340)
+			width: 100%
+			border: none
+			height: 80px
 		strong
 			+osb
 			color: $black
@@ -99,9 +107,16 @@
 		float: left
 		padding: 40px
 		height: 105px
+		+r(960)
+			padding: 40px 20px
+		+r(380)
+			padding: 20px
 		p
 			color: $gray
 			display: inline-block
 		strong
 			color: $black
 			margin-left: 5px
+			+r(590)
+				display: block
+				margin-left: 0

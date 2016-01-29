@@ -76,8 +76,6 @@
 			&:hover
 				text-decoration: none
 
-
-
 ///////////////////////////////
 ///   lang
 
@@ -100,6 +98,8 @@
 		vertical-align: middle
 		padding: 20px 30px
 		+clr
+		+r(360)
+			padding: 20px
 		&.is_active
 			.icn-plus
 				+rotate(-90)
@@ -150,11 +150,19 @@
 		width: 27%
 		color: $gray
 		vertical-align: top
+		+r(660)
+			width: 100%
+			float: none
+			color: $black
+			+oss
 	span
 		width: 70%
 		float: left
 		vertical-align: top
 		color: $black
+		+r(660)
+			width: 100%
+			float: none
 	a.read__more
 		width: 73%
 		float: right

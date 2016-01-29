@@ -148,7 +148,9 @@
 			display: block
 			border-bottom: 1px solid $body
 			border-right: none
-			margin-bottom: 10px
+			// margin-bottom: 10px
+			+ .company__box
+				display: none
 		p
 			color: $gray
 	&__box
@@ -163,6 +165,10 @@
 			position: relative
 			top: 0
 			transform: translate(-50%, 0)
+			left: 5%
+		.locate
+			+r(1250)
+
 		&_item
 			// white-space: nowrap//cource
 			+r(1270)
@@ -221,6 +227,8 @@
 		+r(1590)
 			display: block
 			+clr
+		&.hide
+			display: none
 	&__contact
 		display: table-cell
 		width: 30%
@@ -299,6 +307,8 @@
 					+gray-zero
 
 .consult
+	overflow: hidden
+	+clr
 	.company
 		&__header
 			+r(1600)
@@ -334,14 +344,40 @@
 			width: 100%
 			border-bottom: 1px solid $body
 			padding-bottom: 10px
+		+r(760)
+			border-bottom: none
+	.company__contant
+		+r(1400)
+			display: block
+			width: 100%
+	.company__text
+		+r(1400)
+			display: block
+			width: 100%
+			border: none
+			border-bottom: 1px solid $body
+	.profesional__item
+		+r(1150)
+			width: 100%
+			+oss
+	.profesional__text
+		+r(1150)
+			width: 100%
+	.company__box
+		+r(1400)
+			display: block
+			width: 100%
+			padding: 20px 0
+		.vcenter
+			+r(1600)
+				left: 5%
 	.rate
 		+r(1600)
 			white-space: normal
 		+r(1400)
 			width: 40%
-
-
-
+		+r(760)
+			padding-bottom: 0
 
 .consult__logo
 	display: table-cell ////
@@ -372,7 +408,6 @@
 			+ img
 				margin-left: 0
 
-
 .profesional
 	margin-bottom: 5px
 	+clr
@@ -380,7 +415,14 @@
 		color: $gray
 		float: left
 		width: 28%
+		+r(640)
+			width: 100%
+			float: none
+			+oss
 	&__text
 		color: $gray
 		float: right
 		width: 70%
+		+r(640)
+			width: 100%
+			float: none
