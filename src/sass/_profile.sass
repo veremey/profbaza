@@ -107,11 +107,15 @@
 				height: auto
 		&_name
 			float: left
-			+r(1000)
-				width: 100%
-				float: none
+			// +r(1000)
+			// 	width: 100%
+			// 	float: none
 		&_cost
 			float: right
+			+r(480)
+				float: left
+				width: 100%
+				padding-left: 40px
 	&__wrap
 		height: 0
 		overflow: hidden
@@ -137,6 +141,14 @@
 	p
 		float: right
 		color: $green
+		+r(1050)
+			font-size: 15px
+		+r(1000)
+			font-size: 18px
+		+r(700)
+			font-size: 14px
+		+r(640)
+			float: left
 	+ .programm
 		margin-top: 35px
 .programm

@@ -29,7 +29,7 @@ $(document).ready(function() {
 		lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span></a>'
 	});
 
-	if ($(document).width() < 1020) {
+	if($(document).width() < 1020){
 		$('.programm__name span').readmore('destroy');
 	};
 	// больше Курсов
@@ -185,7 +185,7 @@ $(document).ready(function() {
 				}
 			},
 			{
-				breakpoint: 770,
+				breakpoint: 1100,
 				settings: {
 					slidesToShow: 1
 				}
@@ -205,7 +205,7 @@ $(document).ready(function() {
 		nextArrow: $('.js-sale__next'),
 		responsive: [
 			{
-				breakpoint: 870,
+				breakpoint: 1100,
 				settings: {
 					slidesToShow: 1,
 					variableWidth: false

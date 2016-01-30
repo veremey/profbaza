@@ -1737,7 +1737,7 @@ $(document).ready(function() {
 
 
 
-	if ($(document).width() < 1020) {
+	if($(document).width() < 1020){
 
 		$('.programm__name span').readmore('destroy');
 
@@ -2049,7 +2049,7 @@ $(document).ready(function() {
 
 			{
 
-				breakpoint: 770,
+				breakpoint: 1100,
 
 				settings: {
 
@@ -2089,7 +2089,7 @@ $(document).ready(function() {
 
 			{
 
-				breakpoint: 870,
+				breakpoint: 1100,
 
 				settings: {
 

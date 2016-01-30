@@ -153,6 +153,9 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 
 .footer { display: table; width: 100%; table-layout: fixed; border-top: 1px solid #e4e7e9; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
+.footer__short { border-top: 1px solid #e4e7e9; text-align: center; margin-top: 80px; }
+.footer__short .copy { height: 80px; }
+.footer__short .copy p { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .footer__box { display: table-cell; vertical-align: top; border-right: 1px solid #e4e7e9; }
 .footer__box:first-child { padding: 0; }
 
@@ -764,6 +767,9 @@ button { background-color: transparent; cursor: pointer; }
  .content{ width: -webkit-calc(100% - 640px); width: calc(100% - 640px); }
  .container{ width: -webkit-calc(100% - 580px); width: calc(100% - 580px); }
  .side{ width: 300px; } }
+@media only screen and (max-width: 1630px){
+ .sale__info{ width: 150px; }
+ .sale__term{ padding: 40px 0 40px 20px; } }
 @media only screen and (max-width: 1625px){
  .company__box_item img:nth-child(5n){ margin-left: 10px; }
  .company__box_item img:nth-child(3n+1){ margin-left: 0; } }
@@ -807,6 +813,8 @@ button { background-color: transparent; cursor: pointer; }
  .company__feedback .stars{ margin-bottom: 30px; }
  .company__feedback p{ margin-left: 0; }
  .side.less1500{ width: 230px; } }
+@media only screen and (max-width: 1420px){
+ .sale__info{ width: 120px; } }
 @media only screen and (max-width: 1415px){
  .choice__form_selects{ width: 100%; }
  .choice__form .btn{ width: 300px; float: none; margin: 10px auto; } }
@@ -880,6 +888,7 @@ button { background-color: transparent; cursor: pointer; }
  .profile{ border: none; }
  .user{ float: left; }
  .menu__small{ display: block; float: right; width: 40px; height: 100px; }
+ .direction p{ font-size: 15px; }
  .hide1050{ display: none; } }
 @media only screen and (max-width: 1020px){
  .footer{ display: block; }
@@ -900,10 +909,8 @@ button { background-color: transparent; cursor: pointer; }
  .coach__item p{ line-height: 20px; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
  .coach__item .coach__item_place{ display: block; font-size: 14px; line-height: 20px; margin-top: 0; text-align: left; -moz-text-align-last: left; text-align-last: left; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
  .coach__item a{ line-height: 20px; }
- .lang__header_name{ width: 100%; float: none; }
+ .direction p{ font-size: 18px; }
  .all1000{ width: 100%; } }
-@media only screen and (max-width: 960px){
- .sale__term{ padding: 40px 20px; } }
 @media only screen and (max-width: 895px){
  .subject{ width: 49%; margin-right: 2%; }
  .town{ width: 49%; } }
@@ -926,6 +933,8 @@ button { background-color: transparent; cursor: pointer; }
  .consult .rate{ padding-bottom: 0; }
  .hide760{ display: none; }
  .all760{ width: 100%; } }
+@media only screen and (max-width: 700px){
+ .direction p{ font-size: 14px; } }
 @media only screen and (max-width: 660px){
  .caption__btn .btn__blue{ width: 100%; margin-top: 15px; }
  .programm__name p{ width: 100%; float: none; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
@@ -985,6 +994,7 @@ button { background-color: transparent; cursor: pointer; }
  .side .dignity__item{ width: 50%; }
  .side .dignity__item:nth-child(2){ border-right: none; }
  .coach__item{ width: 100%; padding-left: 40px; }
+ .direction p{ float: left; }
  .profesional__item{ width: 100%; float: none; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
  .profesional__text{ width: 100%; float: none; } }
 @media only screen and (max-width: 590px){
@@ -993,7 +1003,8 @@ button { background-color: transparent; cursor: pointer; }
  .sale__info{ width: 120px; }
  .vacancy__text p{ margin-bottom: 5px; } }
 @media only screen and (max-width: 480px){
- .socio__wrap{ width: 100%; padding: 0 50px; left: 0; } }
+ .socio__wrap{ width: 100%; padding: 0 50px; left: 0; }
+ .lang__header_cost{ float: left; width: 100%; padding-left: 40px; } }
 @media only screen and (max-width: 440px){
  .sale__container .sale__info{ width: 80px; }
  .sale__container .sale__term{ padding: 25px 10px; } }
