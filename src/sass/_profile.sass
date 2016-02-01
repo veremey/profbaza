@@ -32,6 +32,8 @@
 		width: 50%
 		float: right
 		+justify
+		+r(1400)
+			width: 60%
 		+r(1100)
 			width: calc(100% - 220px)
 		+r(1000)
@@ -49,7 +51,7 @@
 			color: $black
 			display: inline-block
 			vertical-align: top
-			font-size: 14px
+			font-size: 16px
 			line-height: 28px
 			+r(1000)
 				line-height: 20px
@@ -110,6 +112,11 @@
 			// +r(1000)
 			// 	width: 100%
 			// 	float: none
+			span
+				font-size: 18px
+				color: $black
+				+r(360)
+					font-size: 16px
 		&_cost
 			float: right
 			+r(480)
@@ -171,10 +178,11 @@
 		width: 70%
 		float: right
 		vertical-align: top
-		color: $black
+		color: $gray
 		+r(660)
 			width: 100%
 			float: none
+			color: $black  //>><<
 	a.read__more
 		width: 73%
 		float: right
@@ -192,6 +200,18 @@
 			span
 				text-decoration: none
 
+.programm__link
+	display: block
+	+r(660)
+		display: block
+	a
+		display: block
+		font-size: 14px
+		color: $blue
+		text-decoration: underline
+		margin-bottom: 10px
+		&:hover
+			text-decoration: none
 .programm__text
 	width: 70%
 	p

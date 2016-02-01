@@ -120,7 +120,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; backgr
 .header__logo:hover { opacity: 0.7; cursor: pointer; }
 .header__logo h1 { color: #2b2f32; font-size: 30px; line-height: 33px; margin-top: 17px; font-family: "Play", Arial, sans-serif; font-weight: 700; }
 .header__logo p { font-size: 12px; color: #9ba1a5; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
-.header__menu { float: left; margin-left: 18%; }
+.header__menu { float: left; margin-left: 10%; }
 .header__menu li { display: inline-block; }
 .header__menu li.is_active { border-bottom: 3px solid #3ab8ea; }
 .header__menu a { display: block; padding: 0 25px; line-height: 97px; color: #2b2f32; }
@@ -158,7 +158,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; backgr
 .footer:after { content: " "; display: table; clear: both; }
 .footer__short { border-top: 1px solid #e4e7e9; text-align: center; margin-top: 80px; }
 .footer__short .copy { height: 80px; }
-.footer__short .copy p { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.footer__short .copy p { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); margin: auto; white-space: nowrap; }
 .footer__box { display: table-cell; vertical-align: top; width: 25%; border-right: 1px solid #e4e7e9; }
 .footer__box:first-child { padding: 0; }
 .footer__box:last-child { border-right: none; }
@@ -267,7 +267,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; backgr
 .coach__wrap { width: 50%; float: right; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; -moz-text-align-last: justify; text-align-last: justify; }
 .coach__wrap:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .coach__item { display: inline-block; text-align: center; }
-.coach__item p { color: #2b2f32; display: inline-block; vertical-align: top; font-size: 14px; line-height: 28px; }
+.coach__item p { color: #2b2f32; display: inline-block; vertical-align: top; font-size: 16px; line-height: 28px; }
 .coach__item .coach__item_place { display: none; }
 .coach__item a { display: inline-block; vertical-align: top; color: #3ab8ea; text-decoration: underline; font-size: 14px; line-height: 28px; }
 .coach__item a:hover { text-decoration: none; }
@@ -285,6 +285,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; backgr
 .lang__header.is_active .icn-plus { -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 .lang__header.is_active + .lang__wrap { height: auto; }
 .lang__header_name { float: left; }
+.lang__header_name span { font-size: 18px; color: #2b2f32; }
 .lang__header_cost { float: right; }
 .lang__wrap { height: 0; overflow: hidden; }
 .lang__text { width: 91%; margin: 0px auto 10px; padding: 30px 50px 30px 30px; background-color: #fff; *zoom: 1; }
@@ -303,11 +304,15 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; backgr
 .programm__name { margin-bottom: 17px; *zoom: 1; }
 .programm__name:after { content: " "; display: table; clear: both; }
 .programm__name p { float: left; width: 27%; color: #9ba1a5; vertical-align: top; }
-.programm__name span { width: 70%; float: right; vertical-align: top; color: #2b2f32; }
+.programm__name span { width: 70%; float: right; vertical-align: top; color: #9ba1a5; }
 .programm__name a.read__more { width: 73%; float: right; text-transform: lowercase; text-align: left; padding: 25px 0; -webkit-box-shadow: 0 1px 17px 16px #fff; box-shadow: 0 1px 17px 16px #fff; }
 .programm__name a.read__more.is_active { -webkit-box-shadow: none; box-shadow: none; }
 .programm__name a.read__more span { color: #38b7ea; text-decoration: underline; }
 .programm__name a.read__more:hover span { text-decoration: none; }
+
+.programm__link { display: block; }
+.programm__link a { display: block; font-size: 14px; color: #3ab8ea; text-decoration: underline; margin-bottom: 10px; }
+.programm__link a:hover { text-decoration: none; }
 
 .programm__text { width: 70%; }
 .programm__text p { color: #2b2f32; vertical-align: top; }
@@ -714,7 +719,7 @@ button { background-color: transparent; cursor: pointer; }
 .title__side { font-size: 24px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
 .title__training { font-size: 12px; color: #9ba1a5; }
 .title__training img { vertical-align: bottom; }
-.title__container { font-size: 36px; margin: 20px 0 10px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
+.title__container { font-size: 36px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 .title__slider { font-size: 16px; text-transform: uppercase; margin-bottom: 35px; font-family: "Open Sans", Arial, sans-serif; font-weight: 700; }
 .title__light { font-size: 36px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 .title__regular { font-size: 36px; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; }
@@ -802,7 +807,6 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 1550px){
  .header__menu{ margin-left: 100px; } }
 @media only screen and (max-width: 1500px){
- .content.less1500{ width: -webkit-calc(100% - 560px); width: calc(100% - 560px); }
  .caption .coach__wrap{ padding-right: 25px; }
  .sale__container .sale__item{ width: 48%; }
  .sale__container .sale__item:nth-child(3n){ margin-right: 2%; }
@@ -811,8 +815,7 @@ button { background-color: transparent; cursor: pointer; }
  .company__feedback{ width: 20%; }
  .company__feedback .vcenter{ white-space: normal; width: 90%; height: 50%; top: 40%; }
  .company__feedback .stars{ margin-bottom: 30px; }
- .company__feedback p{ margin-left: 0; }
- .side.less1500{ width: 230px; } }
+ .company__feedback p{ margin-left: 0; } }
 @media only screen and (max-width: 1420px){
  .sale__info{ width: 120px; } }
 @media only screen and (max-width: 1415px){
@@ -820,6 +823,7 @@ button { background-color: transparent; cursor: pointer; }
  .choice__form .btn{ width: 300px; float: none; margin: 10px auto; } }
 @media only screen and (max-width: 1400px){
  .header__menu{ margin-left: 20px; }
+ .coach__wrap{ width: 60%; }
  .consult .rate, .consult .experience, .consult .company__cost{ width: 30%; }
  .consult .company__contant{ display: block; width: 100%; }
  .consult .company__text{ display: block; width: 100%; border: none; border-bottom: 1px solid #f5f8f9; }
@@ -935,7 +939,8 @@ button { background-color: transparent; cursor: pointer; }
  .footer__box{ width: 100%; }
  .benefit{ padding: 30px 0 0; }
  .programm__name p{ width: 100%; float: none; color: #2b2f32; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
- .programm__name span{ width: 100%; float: none; }
+ .programm__name span{ width: 100%; float: none; color: #2b2f32; }
+ .programm__link{ display: block; }
  .baner{ padding: 20px 30px; background-image: url("../img/baba.png"); height: 160px; }
  .baner strong{ font-size: 40px; }
  .baner p{ font-size: 15px; }
@@ -958,6 +963,7 @@ button { background-color: transparent; cursor: pointer; }
  .comment .dignity{ border: none; }
  .comment .dignity__item{ border: none; }
  .comment .dignity__item:nth-of-type(2){ border-right: none; }
+ .comment .btn__blue{ margin: 30px auto 40px; }
  .inervision__item{ width: 100%; }
  .slid p{ width: 100%; margin-bottom: 5px; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
  .choice__tab .title__light{ width: 100%; float: right; }
@@ -971,12 +977,14 @@ button { background-color: transparent; cursor: pointer; }
  .tutor__item:after, .tutor__item:before{ content: none; }
  .ui-slider{ width: 100%; }
  .ui-slider-handle span{ top: 30px; }
- .title__light{ font-size: 26px; }
+ .cycle__item{ padding: 0 10px; }
+ .title__light{ font-size: 26px; width: -webkit-calc(100% - 75px); width: calc(100% - 75px); }
  .select__text{ font-size: 14px; padding: 0 10px 0 30px; }
  .select__list{ padding-left: 30px; }
  .hide660{ display: none; }
  .show660{ display: block; }
- .all660{ width: 100%; } }
+ .all660{ width: 100%; }
+ .all660.title__light{ width: 100%; } }
 @media only screen and (max-width: 640px){
  .out__header{ text-align: left; padding-bottom: 30px; padding-left: 5%; }
  .out__header h2, .out__header .title__light{ margin-right: 0; }
@@ -1018,7 +1026,9 @@ button { background-color: transparent; cursor: pointer; }
 @media only screen and (max-width: 370px){
  .sale__container .sale__term p{ font-size: 14px; } }
 @media only screen and (max-width: 360px){
- .lang__header{ padding: 20px; } }
+ .lang__header{ padding: 20px; }
+ .lang__header_name span{ font-size: 16px; }
+ .btn__lang{ margin-right: 0; } }
 @media only screen and (max-width: 340px){
  .sale__info{ width: 100%; border: none; height: 80px; } }
 @media only screen and (max-width: 338px){
