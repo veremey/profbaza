@@ -43,7 +43,14 @@ $(document).ready(function() {
 	if ($(document).width() < 1020) {
 		$('.js-more_course').readmore('destroy');
 	};
-
+	// больше Курсов
+	$('.js-more_teacher').readmore({
+		speed: 75,
+		collapsedHeight: 270,
+		embedCSS: false,
+		moreLink: '<a class="read__more" href="#"><i class="icon-bottom"></i><span>Все репетиторы </span></a>',
+		lessLink: '<a class="read__more is_active" href="#"><i class="icon-top"></i><span>Скрыть </span></a>'
+	});
 	if ($(document).width() < 1020) {
 		$('.js-more_teacher').readmore('destroy');
 	};
@@ -66,10 +73,11 @@ $(document).ready(function() {
 
 
 	//accordion
-	$('.action').on('mouseenter', function() {
+	$('.action').on('click', function() {
 		$(this).children('.accord').slideToggle();
-		}).on('mouseleave', function() {
-		$(this).children('.accord').slideToggle();
+		return false;
+		// }).on('mouseleave', function() {
+		// $(this).children('.accord').slideToggle();
 	});
 
 	//icon-heart
@@ -78,9 +86,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-
 	/* Скрипт для рейтинга */
-
 	$('.stars').each(function(){
 
 		var rating = $(this);
@@ -106,9 +112,7 @@ $(document).ready(function() {
 		});
 	});
 
-
 	// check select
-
 	function select() {
 		$(".js-select").each(function(){
 			var select_list = $(this).parent().find(".js-select-list");

@@ -1,12 +1,14 @@
 // Normally footer styles
-.footer
+.table__out
 	display: table
 	width: 100%
 	table-layout: fixed
-	border-top: 1px solid #e4e7e9
 	+clr
 	+r(1020)
 		display: block
+.footer
+	border-top: 1px solid #e4e7e9
+	+clr
 	&__short
 		border-top: 1px solid #e4e7e9
 		text-align: center
@@ -18,69 +20,48 @@
 	&__box
 		display: table-cell
 		vertical-align: top
+		width: 25%
 		border-right: 1px solid #e4e7e9
 		&:first-child
 			padding: 0
-			+r(1020)
-				border-right: 1px solid #e4e7e9
-		+r(1540)
-			width: 305px
-		+r(1260)
-			width: 295px
-		+r(1220)
-			width: 228px
+		&:last-child
+			border-right: none
 		+r(1020)
 			display: block
 			width: 50%
 			float: left
 			border-right: none
-		+r(760)
+		+r(660)
 			width: 100%
 
 .copy
 	position: relative
-	height: 135px
-	border-bottom: 1px solid #e4e7e9
 	p
-		position: absolute
-		top: 50%
-		+try(-50%)
-		left: 50px
+		text-align: left
+		margin-top: 40px
 
 .socio
 	position: relative
-	height: 135px
-	border-bottom: 1px solid #e4e7e9
-	&__wrap
-		position: absolute
-		width: 70%
-		left: 50px
-		top: 50%
-		+try(-50%)
-		+justify
-		+r(760)
-			width: 85%
-		+r(480)
-			width: 100%
-			padding: 0 50px
-			left: 0
+	margin: 55px 0 30px
 	a
 		display: inline-block
+		margin-right: 40px
 		&:hover
 			+gray-half
 		&:active
 			opacity: 0.7
+		&:last-child
+			margin-right: 0
 
 .contact__us
-	padding: 60px 0 30px 50px
 	p
 		color: $gray
-		font-size: 16px
-		margin-bottom: 15px
+		font-size: 14px
+		margin-bottom: 12px
 	a
 		display: inline-block
 		color: $gray
-		font-size: 16px
+		font-size: 14px
 		+tr(.3s)
 		&:hover
 			color: $black
@@ -89,6 +70,8 @@
 	padding: 40px 30px
 	+r(1020)
 		padding: 40px 30px 0
+	+r(660)
+		padding: 30px 0 0
 	&__list
 		margin-top: 30px
 	.read__more
@@ -105,14 +88,16 @@
 		.icon-top
 			top: -5px
 	h3
-		font-size: 18px
+		font-size: 16px
 		+osb
 	li
-		margin-bottom: 40px
+		margin-bottom: 23px
+		+r(1165)
+			margin-bottom: 20px
 	a
 		position: relative
 		display: inline-block
-		font-size: 18px
+		font-size: 16px
 		color: $black
 		+tr(.3s)
 		&:hover
