@@ -38,7 +38,7 @@ button:hover { cursor: pointer; }
 
 body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; background-color: #f5f8f9; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 
-.out { max-width: 1800px; width: 96%; margin: 0 auto; position: relative; *zoom: 1; }
+.out { max-width: 1400px; width: 96%; margin: 0 auto; position: relative; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
 
 .content { width: -webkit-calc(100% - 720px); width: calc(100% - 720px); margin-left: 20px; *zoom: 1; }
@@ -301,7 +301,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.4; backgr
 .programm__name { margin-bottom: 17px; *zoom: 1; }
 .programm__name:after { content: " "; display: table; clear: both; }
 .programm__name p { float: left; width: 27%; color: #9ba1a5; vertical-align: top; }
-.programm__name span { width: 70%; float: left; vertical-align: top; color: #2b2f32; }
+.programm__name span { width: 70%; float: right; vertical-align: top; color: #2b2f32; }
 .programm__name a.read__more { width: 73%; float: right; text-transform: lowercase; text-align: left; padding: 25px 0; -webkit-box-shadow: 0 1px 17px 16px #fff; box-shadow: 0 1px 17px 16px #fff; }
 .programm__name a.read__more.is_active { -webkit-box-shadow: none; box-shadow: none; }
 .programm__name a.read__more span { color: #38b7ea; text-decoration: underline; }
