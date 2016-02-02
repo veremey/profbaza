@@ -1811,7 +1811,7 @@ $(document).ready(function() {
 
 		var cor = $('.vip .company__box').remove()
 
-		$('.company__header')prepand(cor);
+		$('.company__header').prepand(cor);
 
 	};
 

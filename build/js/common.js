@@ -66,7 +66,7 @@ $(document).ready(function() {
 	//фотографии на стр.курсов
 	if($(document).width() < 1200){
 		var cor = $('.vip .company__box').remove()
-		$('.company__header')prepand(cor);
+		$('.company__header').prepand(cor);
 	};
 
 	// footer > 760

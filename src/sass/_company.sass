@@ -134,14 +134,11 @@
 		white-space: nowrap
 		border-right: 1px solid $body
 		.stars
-			bottom: 5px
-			+r(1600)
-				bottom: -10px
+			bottom: 10px
 		p
 			float: left
-			margin: 10px 0 10px
-			+r(1600)
-				margin: 15px 0 10px 10px
+			margin: 15px 0 10px 10px
+			white-space: nowrap
 	.experience
 		display: table-cell
 		position: relative
@@ -163,7 +160,6 @@
 			margin-top: 15px
 		strong
 			color: $black
-
 	&__contant
 		display: table
 		width: 100%
@@ -184,7 +180,6 @@
 			border-bottom: 1px solid $body
 			border-right: none
 			// margin-bottom: 10px
-
 		p
 			color: $gray
 	&__box
@@ -304,6 +299,7 @@
 			display: table-cell
 			width: 50%
 			padding-left: 30px
+			padding-right: 30px
 			border-right: 1px solid $body
 			padding-top: 30px
 		&_left
@@ -394,16 +390,51 @@
 		left: auto
 		right: 10px
 		top: 10px
+	.company__header
+		border-bottom: 1px solid $body
 	&__logo
 		display: table-cell
 		width: 45%
 		border: none
-		border-bottom: 1px solid $body
+		border-bottom: 1px solid $n
+		border-right: 1px solid $body
+		padding: 25px 20px
 		+clr
+		+r(1350)
+			width: 50%
+		> img
+			position: absolute
+			top: 25px
+			left: 20px
+			width: 70px
+			height: 70px
+			-webkit-border-radius: 100%
+			border-radius: 100%
+			vertical-align: top
+		.title__name
+			padding-left: 80px
+			float: left
+			img
+				display: inline-block
+				margin-left: 7px
+				float: none
+				vertical-align: baseline
+			br
+				+ img
+					margin-left: 0
 	.rate
 		width: 25%
 		text-align: center
 		vertical-align: top
+		border-bottom: 1px solid $n
+		+r(1350)
+			width: 20%
+		+r(1250)
+			width: 25%
+		+r(1050)
+			width: 20%
+		+r(1000)
+			width: 25%
 		.stars,
 		p
 			float: none
@@ -414,6 +445,7 @@
 		display: table-cell
 		width: 30%
 		white-space: nowrap
+		border-bottom: 1px solid $n
 	&__text
 		padding: 30px 50px 30px 30px
 		border-bottom: 1px solid $body
@@ -426,78 +458,55 @@
 		+clr
 		a
 			color: $black
+		i
+			+gray
+		p
+			color: $gray
 		.btn__telephone
 			color: $black
 	&__locate
 		display: block
 		width: 100%
 		position: relative
+		margin-top: 25px
 		+clr
-	// &__box
-	// 	display: block
-	// 	width: 100%
-	// 	position: relative
-	// 	margin-bottom: 20px
+		i
+			+gray
+	&__place
+		padding: 30px 25px
+		.icon-locate-blue
+			+gray
+			top: 0
 	.company__site
 		display: block
 		width: 100%
 		position: relative
-
-
-
-
-
-	.profesional__item
-		+r(1150)
-			width: 100%
-			+oss
-	.profesional__text
-		+r(1150)
-			width: 100%
 	.company__box
 		+r(1400)
 			display: block
 			width: 100%
 			padding: 20px 0
-		.vcenter
-			+r(1600)
-				left: 5%
-	.rate
-		+r(1600)
-			white-space: normal
-		+r(1400)
-			width: 40%
-		+r(760)
-			padding-bottom: 0
 
-.consult__logo
-	// display: table-cell ////
-	// position: relative
-	// width: 30%
-	border-right: 1px solid $body
-	padding: 25px 20px
-	// white-space: nowrap
-	> img
-		position: absolute
-		top: 25px
-		left: 20px
-		width: 70px
-		height: 70px
-		-webkit-border-radius: 100%
-		border-radius: 100%
-		vertical-align: top
-	.title__name
-		// max-width: 200px
-		padding-left: 80px
-		float: left
-		img
-			display: inline-block
-			margin-left: 7px
-			float: none
-			vertical-align: baseline
-		br
-			+ img
-				margin-left: 0
+
+
+
+
+
+// 	.profesional__item
+// 		+r(1150)
+// 			width: 100%
+// 			+oss
+// 	.profesional__text
+// 		+r(1150)
+// 			width: 100%
+// 	.rate
+// 		+r(1600)
+// 			white-space: normal
+// 		+r(1400)
+// 			width: 40%
+// 		+r(760)
+// 			padding-bottom: 0
+
 
 .profesional
 	margin-bottom: 5px
