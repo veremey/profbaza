@@ -1809,9 +1809,9 @@ $(document).ready(function() {
 
 	if($(document).width() < 1200){
 
-		var cor = $('.vip .company__box').remove()
+		var cor = $('.vip .js-replace-photo').remove()
 
-		$('.company__header').prepand(cor);
+		$('.js-here-photo').append(cor);
 
 	};
 
