@@ -2,6 +2,35 @@
 	background-color: #FFF
 	margin-bottom: 20px
 	+clr
+	&.vip
+		+r(1200)
+			position: relative
+			-webkit-box-shadow: 0 0 4px 0 $violet
+			box-shadow: 0 0 4px 0 $violet
+			padding-top: 10px
+			&:before
+				content: "top 1"
+				position: absolute
+				top: 5px
+				left: 5px
+				font-size: 10px
+				text-transform: uppercase
+				padding: 2px 3px
+				background-color: $violet
+				color: #FFF
+				-webkit-border-radius: 2px
+				border-radius: 2px
+				+oss
+			.title__name
+				img
+					display: none
+			.company__box
+				overflow: hidden
+				white-space: nowrap
+				&_item
+					img
+						+r(338)
+							width: 40%
 	&__header
 		display: table
 		table-layout: fixed
@@ -11,6 +40,7 @@
 		+clr
 		+r(1270)
 			display: block
+			border-bottom: none
 	&__logo,
 	&__feedback
 		display: table-cell
@@ -52,6 +82,17 @@
 			width: 20%
 		+r(1270)
 			border-top: 1px solid $body
+			border-right: none
+		+ .icon-heart
+			top: 35px
+			right: 50px
+			left: auto
+			+r(1100)
+				display: none
+			+r(1050)
+				display: inline-block
+			+r(660)
+				display: none
 		.vcenter
 			white-space: nowrap
 			+r(1500)
@@ -68,8 +109,7 @@
 				transform: translate(0, 0)
 				+clr
 		.stars
-			+r(1500)
-				margin-bottom: 30px
+			margin-bottom: 25px
 		p
 			color: $gray
 			float: left
@@ -123,12 +163,7 @@
 			margin-top: 15px
 		strong
 			color: $black
-	.icon-heart
-		top: 40px
-		right: 50px
-		left: auto
-		+r(1100)
-			display: none
+
 	&__contant
 		display: table
 		width: 100%
@@ -149,8 +184,7 @@
 			border-bottom: 1px solid $body
 			border-right: none
 			// margin-bottom: 10px
-			+ .company__box
-				display: none
+
 		p
 			color: $gray
 	&__box
@@ -165,7 +199,10 @@
 			position: relative
 			top: 0
 			transform: translate(-50%, 0)
-			left: 5%
+			left: 50%
+		&.hide
+			+r(660)
+				display: none
 		.locate
 			+r(1250)
 
@@ -173,6 +210,8 @@
 			// white-space: nowrap//cource
 			+r(1270)
 				padding-bottom: 10px
+			+r(660)
+				padding-top: 10px
 			img
 				width: 70px
 				height: 70px
@@ -218,17 +257,59 @@
 					text-decoration: none
 			i
 				+gray
+	&__prefooter
+		display: none
+		position: relative
+		width: 100%
+		text-align: center
+		height: 65px
+		border-bottom: 1px solid $body
+		+r(1270)
+			+ .company__box
+				padding: 10px 0 5px
+		+r(660)
+			display: block
+		a
+			display: block
+			width: 80%
+			text-align: center
+			line-height: 65px
+			color: $blue
+			text-transform: lowercase
+			border-right: 1px solid $body
+			+os
+			&:hover
+				text-decoration: underline
+		.icon-heart
+			top: 20px
+			right: 40px
+			left: auto
+			+r(560)
+				right: 30px
+			+r(480)
+				right: 20px
+			+r(350)
+				right: 10px
 	&__footer
 		position: relative
 		width: 100%
 		display: table
 		table-layout: fixed
 		+clr
-		+r(1590)
-			display: block
-			+clr
+		+r(660)
+			display: none
 		&.hide
 			display: none
+		&_right
+			display: table-cell
+			width: 50%
+			padding-left: 30px
+			border-right: 1px solid $body
+			padding-top: 30px
+		&_left
+			display: table-cell
+			width: 50%
+			padding-top: 30px
 	&__contact
 		display: table-cell
 		width: 30%
@@ -309,53 +390,63 @@
 .consult
 	overflow: hidden
 	+clr
-	.company
-		&__header
-			+r(1600)
-				display: block
-				width: 100%
-				+clr
+	.icon-heart
+		left: auto
+		right: 10px
+		top: 10px
 	&__logo
-		+r(1600)
-			width: 100%
-			display: block
-			border: none
-			border-bottom: 1px solid $body
-			+clr
-	.vcenter
-		+r(1600)
-			position: relative
-			top: 0
-			left: 0
-			transform: translate(0, 0)
-	.rate,
-	.experience,
-	.company__cost
-		+r(1600)
-			display: block
-			width: 33%
-			float: left
-			border: none
-			padding-left: 20px
-			+clr
-		+r(1400)
-			width: 30%
-		+r(1250)
-			width: 100%
-			border-bottom: 1px solid $body
-			padding-bottom: 10px
-		+r(760)
-			border-bottom: none
-	.company__contant
-		+r(1400)
-			display: block
-			width: 100%
-	.company__text
-		+r(1400)
-			display: block
-			width: 100%
-			border: none
-			border-bottom: 1px solid $body
+		display: table-cell
+		width: 45%
+		border: none
+		border-bottom: 1px solid $body
+		+clr
+	.rate
+		width: 25%
+		text-align: center
+		vertical-align: top
+		.stars,
+		p
+			float: none
+			text-align: center
+			margin: 0 auto
+	&__cost
+		position: relative
+		display: table-cell
+		width: 30%
+		white-space: nowrap
+	&__text
+		padding: 30px 50px 30px 30px
+		border-bottom: 1px solid $body
+		+clr
+	&__contact
+		display: block
+		position: relative
+		width: 100%
+		margin-bottom: 20px
+		+clr
+		a
+			color: $black
+		.btn__telephone
+			color: $black
+	&__locate
+		display: block
+		width: 100%
+		position: relative
+		+clr
+	// &__box
+	// 	display: block
+	// 	width: 100%
+	// 	position: relative
+	// 	margin-bottom: 20px
+	.company__site
+		display: block
+		width: 100%
+		position: relative
+
+
+
+
+
 	.profesional__item
 		+r(1150)
 			width: 100%
@@ -380,9 +471,9 @@
 			padding-bottom: 0
 
 .consult__logo
-	display: table-cell ////
-	position: relative
-	width: 30%
+	// display: table-cell ////
+	// position: relative
+	// width: 30%
 	border-right: 1px solid $body
 	padding: 25px 20px
 	// white-space: nowrap

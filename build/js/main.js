@@ -1709,13 +1709,15 @@ $(document).ready(function() {
 
 	});
 
+
+
 	// закрыть окно меню
 
-		$('.btn-close').on('click', function() {
+	$('.btn-close').on('click', function() {
 
-			$('.butter__menu').slideUp('300');
+		$('.butter__menu').slideUp('300');
 
-		});
+	});
 
 
 
@@ -1789,23 +1791,29 @@ $(document).ready(function() {
 
 
 
-	//Больше репетиторов главная стр
-
-	// $('.js-more__list').readmore({
-
-	// 	speed: 75,
-
-	// 	collapsedHeight: 125,
-
-	// 	embedCSS: false,
-
-	// 	moreLink: '<a class="read__more" href="#"><span>Все репетиторы </span><i class="icon-bottom"></i></a>',
-
-	// 	lessLink: '<a class="read__more is_active" href="#"><span>Скрыть </span><i class="icon-top"></i></a>'
-
-	// });
 
 
+	// показать контакты курсы
+
+	$('.company__prefooter a').on('click', function() {
+
+		$(this).parent('.company__prefooter').hide().next('.company__footer, .company__box').show();
+
+		return false;
+
+	});
+
+
+
+	//фотографии на стр.курсов
+
+	if($(document).width() < 1200){
+
+		var cor = $('.vip .company__box').remove()
+
+		$('.company__header')prepand(cor);
+
+	};
 
 
 
