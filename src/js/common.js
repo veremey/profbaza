@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 	//accordion
 	$('.action').on('click', function() {
-		$(this).children('.accord').slideToggle();
+		$(this).toggleClass('is_active').children('.accord').slideToggle();
 		return false;
 		// }).on('mouseleave', function() {
 		// $(this).children('.accord').slideToggle();
