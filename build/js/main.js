@@ -1699,6 +1699,34 @@ $(document).ready(function() {
 
 
 
+	//табы курсов
+
+
+
+	$('.open__course').on('click', function() {
+
+		$('.choice__trainer').removeClass('is_active');
+
+		$('.choice__course').addClass('is_active');
+
+		return false;
+
+	});
+
+
+
+	$('.open__trainer').on('click', function() {
+
+		$('.choice__course').removeClass('is_active');
+
+		$('.choice__trainer').addClass('is_active');
+
+		return false;
+
+	});
+
+
+
 
 
 	// открыть окно меню

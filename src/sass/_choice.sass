@@ -23,6 +23,10 @@
 				border-right: 1px solid $n
 				+r(660)
 					float: left
+			&.is_active
+				a
+					color: $black
+					border-bottom: 1px solid $n
 			a
 				display: inline-block
 				color: $blue
@@ -30,9 +34,7 @@
 				line-height: 0.9
 				&:hover
 					border-bottom: 1px dashed $n
-				&.is_active
-					color: $black
-					border-bottom: 1px solid $n
+
 	&__text
 		padding: 25px 34px
 		p
@@ -78,6 +80,10 @@
 			+r(660)
 				width: 100%
 				margin: 20px 0 0
+	&__get
+		display: none
+		&.is_active
+			display: block
 .subject
 	position: relative
 	width: 58%
